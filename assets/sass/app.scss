@@ -1,0 +1,101 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+@font-face{
+  font-family: 'Montserrat';
+  src: url('../fonts/montserrat-regular.woff2') format('woff2'),
+       url('../fonts/montserrat-regular.woff') format('woff'),
+       url('../fonts/montserrat-regular.ttf') format('ttf'),
+       url('../fonts/montserrat-regular.eot') format('eot'),
+       url('../fonts/montserrat-regular.svg') format('svg');
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Montserrat';
+  src: url('../fonts/montserrat-bold.woff2') format('woff2'),
+       url('../fonts/montserrat-bold.woff') format('woff'),
+       url('../fonts/montserrat-bold.ttf') format('ttf'),
+       url('../fonts/montserrat-bold.eot') format('eot'),
+       url('../fonts/montserrat-bold.svg') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Montserrat';
+  src: url('../fonts/montserrat-ultralight.woff2') format('woff2'),
+       url('../fonts/montserrat-ultralight.woff') format('woff'),
+       url('../fonts/montserrat-ultralight.ttf') format('ttf'),
+       url('../fonts/montserrat-ultralight.eot') format('eot'),
+       url('../fonts/montserrat-ultralight.svg') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+
+// Create variables
+// $variables = 
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+}
+
+
+header.header {
+	z-index: 200;
+
+	.menu-main-nav-container {
+		display: flex;
+
+		ul.menu {
+			display: flex;
+			align-items: center;
+
+			li {
+				margin-right: 1.25rem;
+			}
+			li:last-child {
+				margin-right: 0;
+			}
+			a {
+				font-size: 0.875rem; // text-sm
+				text-transform: uppercase;
+			}
+			li.current-menu-item a,
+			a:hover {
+				color: #393c94;
+			}
+		}
+	}
+
+}
+
+
+section.hero {}
+
+
+.c-rasakan-pengalaman-baru-berbelanja-pakai-empatkali {
+	ol li {
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute; left: 1.1rem; top: 0;
+			width: 5px;
+			height: 100%;
+			background: #fff;
+		}
+/*		&:before:last-child {
+			width: 0 !important;
+			background: transparent;
+		}*/
+
+		span {
+			position: relative;
+			z-index: 100;
+		}
+	}
+}
