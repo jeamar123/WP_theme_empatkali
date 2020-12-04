@@ -1,3 +1,6 @@
+// PALLETE:    1. #38424b / rgb(56, 66, 75) (Very Dark Grayish Blue / Limed Spruce)
+//             2. #98A2AB / rgb(152, 162, 171) (Dark Grayish Blue / Gray Chateau)
+
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
@@ -16,6 +19,7 @@ module.exports = {
     		'c-secondary': '#5b60e8',
         'c-F3F3F3': '#F3F3F3',
         'c-38424b': '#38424b',
+        'c-98A2AB': '#98A2AB',
     	}
     },
   },
@@ -23,6 +27,8 @@ module.exports = {
     textColor: ['group-hover'],
     textOpacity: ['group-hover'],
     opacity: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
+    margin: ['responsive', 'hover', 'first', 'last'],
+    borderWidth: ['responsive', 'first', 'last'],
   },
   plugins: [],
 }

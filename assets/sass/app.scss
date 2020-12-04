@@ -1,3 +1,6 @@
+// @Note:
+// - use purge and postCSS
+
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
@@ -35,24 +38,118 @@
   font-style: normal;
 }
 
-// Create variables
-// $variables = 
+
+// ====================================================================
+//  Generic
+// ====================================================================
+// modify leaflet marker
+.leaflet-div-icon {
+	background: transparent;
+	border: 0;
+}
+// Should retain default styling being made from editor; applicable to pages and posts
+.c4x-content {
+	blockquote {
+		@apply mb-4 px-4 py-6 italic border-l-4 bg-gray-400 text-gray-700 border-gray-700;
+
+		&:before {
+		  @apply text-gray-700;
+		  content: "\201C";
+		  font-size: 4em;
+		  line-height: 0.1em;
+		  margin-right: 0.25em;
+		  vertical-align: -0.4em;
+		}
+		// remove styles for p:last-child
+		p:last-child {
+			@apply mb-0;
+		}
+	}
+
+	h3, h4 {
+		@apply mb-4 font-semibold;
+	}
+	h3 {
+		@apply text-xl;
+	}
+	h4 {
+		@apply text-lg;
+	}
+
+	ol, ul {
+		li {
+			@apply mb-2;
+		}
+		li:last-child {
+			@apply mb-0;
+		}
+	}
+	ol {
+		// @apply list-decimal ml-4 mb-4;
+		@apply ml-4 mb-4;
+		counter-reset: item;
+		> li {
+			@apply block;
+		}
+		> li:before {
+			content: counters(item, ".") ". ";
+			counter-increment: item;
+		}
+	}
+	ul {
+		@apply list-disc ml-4 mb-4;
+	}
+	p {
+		@apply mb-4;
+	}
+
+	// Wordpress default classes
+	.alignleft {
+		@apply float-left;
+	}
+	.alignright {
+		@apply float-right;
+	}
+	// Applicable for images only
+	img.alignleft {
+		@apply mr-3; 
+	}
+	img.alignright {
+		@apply ml-3; 
+	}
+
+	a {
+		color: #393c94;
+	}
+	iframe {
+		width: 100%;
+	}
+}
 
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-	font-weight: 400;
+	// font-weight: 400;
 }
 
 
+
+
+
+// ====================================================================
+//  [Section] - Header
+// ====================================================================
 header.header {
 	z-index: 200;
 
 	.menu-main-nav-container {
-		display: flex;
+		@apply flex;
 
 		ul.menu {
-			display: flex;
-			align-items: center;
+			@apply flex items-center justify-center;
+			margin: 0 auto;
+			// display: flex;
+			// align-items: center;
+			flex-wrap: wrap;
 
 			li {
 				margin-right: 1.25rem;
@@ -70,32 +167,260 @@ header.header {
 			}
 		}
 	}
-
 }
 
-
+// ====================================================================
+//  [Page] - Home page
+// ====================================================================
 section.hero {}
+
+section.partners {
+	ul li:hover > div {
+		@apply flex;
+	}
+}
 
 
 .c-rasakan-pengalaman-baru-berbelanja-pakai-empatkali {
 	ol li {
 		position: relative;
 
+		&:last-child:before { width: 0 !important; }
+
 		&:before {
 			content: '';
-			position: absolute; left: 1.1rem; top: 0;
-			width: 5px;
+			position: absolute; left: 1.25rem; top: 0;
+			width: 2px;
 			height: 100%;
 			background: #fff;
 		}
-/*		&:before:last-child {
-			width: 0 !important;
-			background: transparent;
-		}*/
 
 		span {
 			position: relative;
 			z-index: 100;
 		}
+		// awts
+	}
+}
+
+
+// ====================================================================
+//  [Page] - Blog
+// ====================================================================
+section.c4x-blog {
+	.post-thumbnail-img {
+		img {
+			@apply object-fill;
+			height: 300px;
+		}
+	}
+}
+
+// ====================================================================
+//  [Page] - FAQ
+// ====================================================================
+section.c4x-faq {
+	// Generic styling
+	.tabcontent .panel {
+		ol, ul {
+			li {
+				@apply mb-2;
+			}
+			li:last-child {
+				@apply mb-0;
+			}
+		}
+		ol {
+			// @apply list-decimal ml-4 mb-4;
+			@apply ml-4 mb-4;
+			counter-reset: item;
+			> li {
+				@apply block;
+			}
+			> li:before {
+				content: counters(item, ".") ". ";
+				counter-increment: item;
+			}
+		}
+		ul {
+			@apply list-disc ml-4 mb-4;
+		}
+		p {
+			@apply mb-4;
+		}
+		a {
+			color: #393c94;
+		}
+	}
+
+	/* Style the tab */
+	.tab {
+		overflow: hidden;
+		border: 1px solid #ccc;
+		background-color: #f1f1f1;
+	}
+
+	/* Style the buttons that are used to open the tab content */
+	.tab button {
+		background-color: inherit;
+		float: left;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 14px 16px;
+		transition: 0.3s;
+	}
+
+	/* Change background color of buttons on hover */
+	.tab button:hover {
+		background-color: #ddd;
+	}
+
+	/* Create an active/current tablink class */
+	.tab button.active {
+		background-color: #ccc;
+	}
+
+	/* Style the tab content */
+	.tabcontent {
+		display: none;
+		color: rgba(56, 66, 75, .5);
+	}
+
+
+	/* Style the buttons that are used to open and close the accordion panel */
+	.accordion {
+		@apply py-4 w-full font-semibold text-lg;
+
+		border-bottom: 1px solid rgba(56, 66, 75, .1);
+
+		cursor: pointer;
+		text-align: left;
+		outline: none;
+		transition: 0.4s;
+	}
+
+	/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+	.active-accordion {
+		img {
+			@apply opacity-100;
+		}
+		span {
+			@apply text-opacity-100;
+		}
+
+	}
+	.accordion:hover {
+		color: rgba(56, 66, 75, 1);
+	}
+	.accordion.active-accordion,
+	.panel.active-panel {
+		color: rgba(56, 66, 75, 1);
+	}
+
+	/* Style the accordion panel. Note: hidden by default */
+	.panel {
+		@apply py-4 hidden overflow-hidden;
+	}
+}
+
+
+
+// ====================================================================
+//  Footer
+// ====================================================================
+footer.footer {
+	.nav1, .nav2 {
+		li a{
+			@apply text-sm;
+		}
+	}
+}
+
+
+
+// ====================================================================
+//  Media Queries
+// ====================================================================
+@media all and (max-width: 480px) {
+	header.header {
+		.menu-main-nav-container {
+			ul.menu {
+				margin-left: -1.25rem;
+				margin-right: -1.25rem;
+
+				li {
+					margin-left: 1rem;
+					margin-right: 1rem;
+				}
+			}
+		}
+	}
+	section.hero,
+	section.c4x-blog,
+	section.c4x-faq,
+	section.c4x-blog-search,
+	div.page {
+		padding-top: 13.15rem;
+	}
+	.c-rasakan-pengalaman-baru-berbelanja-pakai-empatkali {
+		ol li {
+			span {
+				min-width: 2.5rem;
+			}
+		}
+	}
+	section.partners {
+		ul {
+			margin-left: -15px;
+			margin-right: -15px;
+			margin-bottom: -15px;
+
+			li {
+				width: 150px; height: 150px;
+				margin-left: 15px;
+				margin-right: 15px;
+				margin-bottom: 15px;
+
+				&:last-child {
+					margin-right: 15px;					
+				}
+			}
+		}
+	}
+	// Merchant Page
+	section.process {
+		ul {
+			li > div {
+				min-width: 3rem;
+			}
+		}
+	}
+	ul.search-result {
+		li {
+			width: 100% !important;
+		}
+	}
+	section.c4x-faq {
+		.tablinks {
+			span {
+				font-size: 0.7rem;
+			}
+		}
+		.tabcontent {
+			@apply px-3;
+
+			.accordion {
+				@apply text-sm;
+			}
+
+			.panel {
+				@apply text-sm;
+			}
+		}
+	}
+
+	li.test-zzz {
+		width: 100% !important;
 	}
 }

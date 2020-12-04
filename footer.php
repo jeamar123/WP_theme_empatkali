@@ -1,33 +1,36 @@
-<footer class="text-white">
+<footer class="footer text-white">
 	<div class="bg-c-secondary">
-		<div class="flex w-10/12 mx-auto py-20">
-			<div class="w-1/3 flex">
-				<ul class="w-1/2">
-					<li><a href="" class="text-sm">Home</a></li>
-					<li><a href="" class="text-sm">For Merchant</a></li>
-					<li><a href="" class="text-sm">Partnership</a></li>
-					<li><a href="" class="text-sm">About</a></li>
-					<li><a href="" class="text-sm">Contact Us</a></li>
-				</ul>
-				<ul class="w-1/2">
-					<li><a href="" class="text-sm">FAQ</a></li>
-					<li><a href="" class="text-sm">Disclaimer</a></li>
-					<li><a href="" class="text-sm">Hak Pelanggan</a></li>
-					<li><a href="" class="text-sm">Ketentuan Penggunaan</a></li>
-					<li><a href="" class="text-sm">Kebijakan Privasi</a></li>
-				</ul>
+		<div class="flex lg:flex-row md:flex-row flex-col w-10/12 mx-auto lg:py-20 md:py-20 py-10">
+			<div class="lg:w-1/3 md:w-1/3 w-full lg:mb-0 md:mb-0 mb-10 flex">
+				<?php
+
+				wp_nav_menu([
+					'menu'=>'footer-menu1',
+					'menu_class' => 'w-1/2 nav1',
+					'container' => 'ul',
+				]);
+
+				wp_nav_menu([
+					'menu'=>'footer-menu2',
+					'menu_class' => 'w-1/2 nav2',
+					'container' => 'ul',
+				]);
+
+				?>
 			</div>
-			<div class="w-1/3 text-center mx-5">
+			<div class="lg:w-1/3 md:w-1/3 w-full text-center lg:mx-5 md:mx-5 mx-0 lg:mb-0 md:mb-0 mb-10">
 				<p class="text-sm mb-2">Langganan newsletter kami untuk mendapatkan informasi dan penawaran menarik</p>
 				<div class="mb-4">
-				  <div class="mt-1 relative rounded-md shadow-sm">
-				    <input type="email" class="focus:outline-none block w-full pl-3 pr-16 sm:text-sm border-gray-300 rounded-full text-black py-2" placeholder="Masukkan email Kamu">
-				    <div class="absolute inset-y-0 right-0 flex items-center">
-				    	<button class="text-white rounded-full bg-c-primary w-10 h-full">
-				    		<i class="fas fa-angle-right"></i>
-				    	</button>
-				    </div>
-				  </div>
+					<div class="mt-1 relative rounded-md shadow-sm">
+						<form id="frmNewsletterSubscription">
+							<input type="email" class="focus:outline-none block w-full pl-3 pr-16 sm:text-sm border-gray-300 rounded-full text-black py-2" placeholder="Masukkan email Kamu" name="email" required>
+							<div class="absolute inset-y-0 right-0 flex items-center">
+								<button class="text-white rounded-full bg-c-primary w-10 h-full">
+									<i class="fas fa-angle-right"></i>
+								</button>
+							</div>
+						</form>
+					</div>
 				</div>
 				<div class="flex text-sm justify-center">
 					<label class="mr-5">Stay Connected</label>
@@ -38,7 +41,7 @@
 							</a>
 						</li>
 						<li class="mr-3">
-							<a href="https://www.facebook.com/EmpatKaliID" target="_blank">
+							<a href="https://www.facebook.com/empatkali.co.id" target="_blank">
 								<i class="fab fa-facebook-f text-lg"></i>
 							</a>
 						</li>
@@ -55,7 +58,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="w-1/3">
+			<div class="lg:w-1/3 md:w-1/3 w-full">
 				<img src="https://images.empatkali.co.id/rebranding/logo-with-tagline-white.png" class="w-64 mx-auto mb-6" alt="">
 				<div class="flex justify-center items-center mb-5">
 					<a href="https://apps.apple.com/us/app/empatkali/id1440454442" target="_blank" class="mr-3">
@@ -76,10 +79,160 @@
 	</div>
 
 	<div class="copyright bg-c-primary text-white text-center py-5">
-		<p class="text-sm">Copyrights &copy; 2020 <strong>PT EMPAT KALI INDONESIA</strong>. All Rights Reserved.</p>
+		<p class="lg:text-sm md:text-sm text-xs">Copyrights &copy; 2020 <strong>PT EMPAT KALI INDONESIA</strong>. All Rights Reserved.</p>
+	</div>
+
+
+	<!-- Modal -->
+	<a href="#" class="fixed bottom-0 right-0 bg-c-secondary mb-5 mr-5 lg:px-5 md:px-5 px-3 py-3 border-2 border-c-primary rounded-full flex items-center" onclick="openModal(event, 'CustomerHotline')">
+		<i class="far fa-question-circle text-2xl lg:mr-2 md:mr-2 mr-0"></i>
+		<span class="lg:inline-block md:inline-block hidden">Customer Help</span>
+	</a>
+	<div class="hidden modal-customer-help fixed bottom-0 right-0 lg:mb-5 md:mb-5 mb-0 lg:mr-5 md:mr-5 mr-0 border border-c-primary bg-white rounded-lg overflow-hidden lg:w-2/6 md:w-2/6 w-full" style="z-index: 9999">
+		<h4 class="bg-c-primary text-center text-xl py-3 relative">
+			Customer Hotline
+			<a href="#" class="close text-white text-3xl absolute right-0 top-0 pr-5 mt-1">&times;</a>
+		</h4>
+		<div class="px-5 py-5">
+			<form id="frmCustomerHotline">
+				<div class="mb-3">
+					<label for="frmCustomerHotlineName" class="block text-sm font-medium text-gray-700">Name</label>
+					<input type="text" name="name" id="frmCustomerHotlineName" class="mt-1 focus:outline-none block w-full shadow-sm sm:text-sm border border-c-secondary rounded-lg text-c-primary py-2 px-3" required>
+				</div>
+				<div class="mb-3">
+					<label for="frmCustomerHotlineMobileNo" class="block text-sm font-medium text-gray-700">Mobile No.</label>
+					<input type="text" name="mobile_no" id="frmCustomerHotlineMobileNo" class="mt-1 focus:outline-none block w-full shadow-sm sm:text-sm border border-c-secondary rounded-lg text-c-primary py-2 px-3" required>
+				</div>
+				<div class="mb-3">
+					<label for="frmCustomerHotlineEMail" class="block text-sm font-medium text-gray-700">E-mail</label>
+					<input type="email" name="email" id="frmCustomerHotlineEMail" class="mt-1 focus:outline-none block w-full shadow-sm sm:text-sm border border-c-secondary rounded-lg text-c-primary py-2 px-3" required>
+				</div>
+				<div class="mb-5">
+					<label for="frmCustomerHotlineIssue" class="block text-sm font-medium text-gray-700">Issue</label>
+					<textarea name="issue" id="frmCustomerHotlineIssue" rows="5" class="mt-1 focus:outline-none block w-full shadow-sm sm:text-sm border border-c-secondary rounded-lg text-c-primary py-2 px-3" required></textarea>
+				</div>
+				<div class="flex">
+					<button type="button" class="border border-c-primary text-c-primary w-1/2 rounded-lg py-2 mr-5">Cancel</button>
+					<input type="submit" class="w-1/2 bg-c-primary text-white py-2 rounded-lg cursor-pointer" value="Send">
+				</div>
+			</form>
+		</div>
 	</div>
 </footer>
 
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+
+<script>
+	function ready(fn) {
+		if (document.readyState != 'loading'){
+			fn();
+		} else {
+			document.addEventListener('DOMContentLoaded', fn);
+		}
+	}
+
+	ready(function () {
+		let frmCustomerHotline = document.getElementById('frmCustomerHotline'),
+			frmNewsletterSubscription = document.getElementById('frmNewsletterSubscription');
+		// Cancel
+		frmCustomerHotline.querySelector('button').addEventListener('click', function (e) {
+			document.querySelector('.modal-customer-help').style.display = 'none';
+		});
+		// x button
+		document.querySelector('.modal-customer-help a.close').addEventListener('click', function (e) {
+			e.preventDefault();
+			document.querySelector('.modal-customer-help').style.display = 'none';
+		})
+		// Submit
+		frmCustomerHotline.addEventListener('submit', function (e) {
+			e.preventDefault();
+			// let formData = new FormData( frmCustomerHotline );
+			// console.log('aa', formData)
+			let formData = {
+				name: frmCustomerHotline.querySelector('input[name=name]').value,
+				email: frmCustomerHotline.querySelector('input[name=email]').value,
+				mobileNumber: frmCustomerHotline.querySelector('input[name=mobile_no]').value,
+				issue: frmCustomerHotline.querySelector('textarea[name=issue]').value,
+			}
+			// Check mobile number existency
+			fetch(`https://api.empatkali.co.id/user/api/users/check/${formData.mobileNumber}`)
+				.then(response => response.json())
+				.then(res => {
+					if (!res.exists) {
+						alert('Sorry, the mobile number you input is not registered!');
+						return;
+					}
+
+					let requestBody = {
+						request: {
+							requester: {
+								name: formData.name,
+								email: formData.email
+							},
+							subject: 'Customer Help Line - ' + formData.mobileNumber,
+							comment: {
+								body: formData.issue
+							}
+						}
+					}
+					fetch('https://empatkali.zendesk.com/api/v2/requests.json', {
+						method: 'POST',
+						headers: {
+							'Content-Type': 'application/json'
+						},
+						body: JSON.stringify(requestBody)
+					})
+					.then(response2 => response2.json())
+					.then(res2 => {
+						alert('Issue successfully sent!');
+						document.querySelector('.modal-customer-help').style.display = 'none';
+					})
+
+				})
+		});
+
+		// Newsletter Subscription
+		frmNewsletterSubscription.addEventListener('submit', function (e) {
+			e.preventDefault();
+			let requestBody = {
+				email_address: this.querySelector('input[name=email]').value
+			}
+			fetch('https://cms.empatkali.co.id/cms/newsletter-subscription', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify(requestBody)
+			})
+			.then(response2 => response2.json())
+			.then(res2 => {
+				if (res2.status != 400) {
+					alert('Subscribed successfully!');
+					this.querySelector('input[name=email]').value = '';
+				} else {
+					alert('E-mail subscribed already!');
+				}
+			})
+			.catch(err => {
+				console.log('err', err)
+			})
+		})
+	});
+
+	function openModal(evt, modalType) {
+		evt.preventDefault();
+		let frmCustomerHotline = document.getElementById('frmCustomerHotline');
+		// reset value
+		frmCustomerHotline.querySelector('input[name=name]').value = '';
+		frmCustomerHotline.querySelector('input[name=email]').value = '';
+		frmCustomerHotline.querySelector('input[name=mobile_no]').value = '';
+		frmCustomerHotline.querySelector('textarea[name=issue]').value = '';
+		document.querySelector('.modal-customer-help').style.display = 'block';
+	}
+</script>
 
 <?php wp_footer(); ?>
 

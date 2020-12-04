@@ -1,16 +1,16 @@
-<?php get_header(); ?>
+<?php get_header();?>
 
 <section class="hero pt-20 bg-c-primary text-white">
-	<div class="w-10/12 mx-auto flex py-20">
-		<div class="w-7/12 flex flex-col justify-center items-start pl-16 pr-5">
+	<div class="w-10/12 mx-auto flex lg:flex-row md:flex-row flex-col lg:py-20 md:py-20 py-16 lg:text-left md:text-left text-center">
+		<div class="lg:w-7/12 md:w-7/12 w-full flex flex-col justify-center items-start lg:pl-16 md:pl-16 pl-0 lg:pr-5 md:pr-5 pr-0 lg:mb-0 md:mb-0 mb-10">
 			<h2 class="text-4xl leading-tight mb-3">JANGAN PERSULIT PELANGGAN</h2>
 			<p class="font-light text-sm">Pelangganmu tidak menyukai bunga pada cicilan. Beri kemudahan pada mereka untuk membeli apapun yang mereka inginkan dengan cicilan bunga 0% selamanya.</p>
 
-			<a href="#" class="mt-8 text-white flex items-center bg-c-secondary py-3 px-6 rounded-full text-sm">
+			<a href="/partnership" class="mt-8 text-white flex items-center bg-c-secondary py-3 px-6 rounded-full text-sm lg:ml-0 md:ml-0 mx-auto">
 				DAFTAR SEKARANG <i class="fas fa-angle-right text-2xl ml-2"></i>
 			</a>
 		</div>
-		<div class="w-5/12">
+		<div class="lg:w-5/12 md:w-5/12 w-full">
 			<img src="https://images.empatkali.co.id/rebranding/hero-merchant.png" alt="">
 		</div>
 	</div>
@@ -19,21 +19,21 @@
 
 <section class="benefits-4x bg-c-F3F3F3">
 	<div class="w-10/12 mx-auto text-center py-20">
-		<h4 class="w-8/12 mx-auto text-3xl font-hairline leading-none mb-10 pb-5 border-b border-c-primary">KEUNTUNGAN</h4>
-		<div class="flex">
-			<figure class="w-1/4 px-5">
+		<h4 class="lg:w-8/12 md:w-8/12 w-full mx-auto text-3xl font-hairline leading-none mb-10 pb-5 border-b border-c-primary">KEUNTUNGAN</h4>
+		<div class="flex lg:flex-row md:flex-row flex-col">
+			<figure class="lg:w-1/4 md:w-1/4 w-full px-5 lg:mb-0 md:mb-0 mb-10">
             	<svg class="h-24 mx-auto mb-4" data-name="Meningkatkan rata-rata pesanan sehingga dapat menjual lebih banyak" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.82 115.43"><title>Meningkatkan rata-rata pesanan sehingga dapat menjual lebih banyak</title><path d="M497.69,262.7H443.85v-5h53.84a2.5,2.5,0,0,0,2.47-2.87l-12.27-81.5a2.48,2.48,0,0,0-2.47-2.13H431.58v-5h53.84a7.45,7.45,0,0,1,7.42,6.38l12.27,81.5A7.5,7.5,0,0,1,497.69,262.7Z" transform="translate(-408.37 -147.27)" style="fill:#393c94"/><path d="M469.72,262.7H415.87a7.5,7.5,0,0,1-7.42-8.62l12.27-81.5a7.45,7.45,0,0,1,7.42-6.38H482a7.5,7.5,0,0,1,7.42,8.62l-12.27,81.5A7.45,7.45,0,0,1,469.72,262.7Zm-41.57-91.5a2.49,2.49,0,0,0-2.47,2.13l-12.27,81.5a2.5,2.5,0,0,0,2.47,2.87h53.84a2.48,2.48,0,0,0,2.47-2.13l12.27-81.5A2.5,2.5,0,0,0,482,171.2H428.14Z" transform="translate(-408.37 -147.27)" style="fill:#393c94"/><path d="M473.17,177.46h-5v-12a13.24,13.24,0,1,0-26.48,0v12h-5v-12a18.24,18.24,0,1,1,36.48,0v12Z" transform="translate(-408.37 -147.27)" style="fill:#393c94"/><rect x="79.92" y="21.43" width="1" height="76.68" style="fill:#393c94"/><rect x="494.64" y="242.7" width="1" height="18.28" transform="translate(-441.43 276.63) rotate(-45)" style="fill:#393c94"/><rect x="470.9" y="252.29" width="20.96" height="1" transform="translate(-446.13 267.16) rotate(-45)" style="fill:#393c94"/><path d="M447.63,197.21a17.92,17.92,0,0,0-1.5,35.77V212.11l-7.57,7.57-2.12-2.12,9.12-9.12a3,3,0,0,1,4.14,0l9.12,9.12-2.12,2.12-7.57-7.57V233A17.92,17.92,0,0,0,447.63,197.21Z" transform="translate(-408.37 -147.27)" style="fill:#393c94"/></svg>
 				<figcaption class="text-sm">Meningkatkan rata-rata pesanan sehingga dapat menjual lebih banyak</figcaption>
 			</figure>
-			<figure class="w-1/4 px-5">
+			<figure class="lg:w-1/4 md:w-1/4 w-full px-5 lg:mb-0 md:mb-0 mb-10">
 				<svg class="h-24 mx-auto mb-4" data-name="Jumlah belanja online dan juga konversi dalam toko meningkat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.35 114.96"><title>Jumlah belanja online dan juga konversi dalam toko meningkat</title><rect x="2.5" y="2.5" width="63.35" height="109.96" rx="5" ry="5" style="fill:none;stroke:#393c94;stroke-miterlimit:10;stroke-width:5px"/><rect x="7.5" y="7.5" width="53.35" height="84.23" rx="2" ry="2" style="fill:none;stroke:#393c94;stroke-miterlimit:10"/><circle cx="34.18" cy="101.1" r="5.37" style="fill:none;stroke:#393c94;stroke-miterlimit:10"/><path d="M326.63,181.35a17.92,17.92,0,0,0-1.5,35.77V196.25l-7.57,7.57-2.12-2.12,9.12-9.12a3,3,0,0,1,4.14,0l9.12,9.12-2.12,2.12-7.57-7.57v20.87A17.92,17.92,0,0,0,326.63,181.35Z" transform="translate(-292.61 -147.27)" style="fill:#393c94"/></svg>
 				<figcaption class="text-sm">Jumlah belanja online dan juga konversi dalam toko meningkat</figcaption>
 			</figure>
-			<figure class="w-1/4 px-5">
+			<figure class="lg:w-1/4 md:w-1/4 w-full px-5 lg:mb-0 md:mb-0 mb-10">
 				<svg class="h-24 mx-auto mb-4" data-name="Mendatangkan pelanggan yang benar-benar baru untuk berbelanja" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88.67 115.5"><title>Mendatangkan pelanggan yang benar-benar baru untuk berbelanja</title><path d="M613.62,197.72h-0.36a32.15,32.15,0,1,0-52.95,0h-0.36a17.52,17.52,0,0,0-17.5,17.5v47.62h88.67V215.22A17.52,17.52,0,0,0,613.62,197.72Zm-26.83-45.38a27.14,27.14,0,1,1-27.15,27.15A27.18,27.18,0,0,1,586.78,152.34Zm-26.83,50.38h4.62a32.13,32.13,0,0,0,44.44,0h4.61a12.51,12.51,0,0,1,12.5,12.5v35.85H547.45V215.22A12.51,12.51,0,0,1,559.95,202.72Zm-12.5,55.12v-5.77h78.67v5.77H547.45Z" transform="translate(-542.45 -147.34)" style="fill:#393c94"/><path d="M586.78,197.41a17.92,17.92,0,1,0-17.92-17.92A17.92,17.92,0,0,0,586.78,197.41Zm-9.67-19.06h8.17v-8.17h3v8.17h8.17v3h-8.17v8.17h-3v-8.17h-8.17v-3Z" transform="translate(-542.45 -147.34)" style="fill:#393c94"/></svg>
 				<figcaption class="text-sm">Mendatangkan pelanggan yang benar-benar baru untuk berbelanja</figcaption>
 			</figure>
-			<figure class="w-1/4 px-5">
+			<figure class="lg:w-1/4 md:w-1/4 w-full px-5">
 				<svg class="h-24 mx-auto mb-4" data-name="Pelanggan akan berbelanja lebih sering dan lebih banyak" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.22 115.72"><title>Pelanggan akan berbelanja lebih sering dan lebih banyak</title><path d="M680.54,253.72h16.25a5.51,5.51,0,0,0,5.5-5.5V233.35a5.51,5.51,0,0,0-5.5-5.5H680.54a5.51,5.51,0,0,0-5.5,5.5v14.86A5.51,5.51,0,0,0,680.54,253.72ZM680,233.35a0.5,0.5,0,0,1,.5-0.5h16.25a0.5,0.5,0,0,1,.5.5v14.86a0.5,0.5,0,0,1-.5.5H680.54a0.5,0.5,0,0,1-.5-0.5V233.35Z" transform="translate(-658.81 -147.35)" style="fill:#393c94"/><path d="M765.55,155.56a28.27,28.27,0,0,0-20-8.2h-0.2A28.46,28.46,0,0,0,717.1,176c0,2.55.84,7,4.34,14.2H688.67v-1.55a5.94,5.94,0,0,0-5.93-5.93H679.2a5.94,5.94,0,0,0-5.93,5.93v1.55h-2.36a6.08,6.08,0,0,0-5.64,3.78l-6,14.62a6.06,6.06,0,0,0-.46,2.32v6.48a6.1,6.1,0,0,0,6.1,6.1H666v31.79a7.78,7.78,0,0,0,7.78,7.78H724.4a7.78,7.78,0,0,0,7.78-7.78V223.5h1.1a6.1,6.1,0,0,0,6.08-5.66l2,2.58a5.66,5.66,0,0,0,4.49,2.19h0a5.66,5.66,0,0,0,4.5-2.25C771,193.22,774.06,180.68,774,175.63A28.28,28.28,0,0,0,765.55,155.56ZM720.48,218.5H707.19v-8.14c0-.11,0-0.23,0-0.34L706,195.2h10.8l3.63,14.7a3.11,3.11,0,0,1,.09.74v7.85Zm-28.26-23.3L691,210c0,0.11,0,.22,0,0.33v8.14H677.7v-7.85a3.06,3.06,0,0,1,.09-0.74l3.63-14.7h10.8ZM692,210.36c0-.09,0-0.17,0-0.25l1.22-14.9H705l1.22,14.9c0,0.08,0,.17,0,0.25v8.14H692v-8.14Zm-13.72-21.7a0.94,0.94,0,0,1,.93-0.93h3.54a0.94,0.94,0,0,1,.93.93v1.55h-5.4v-1.55ZM663.81,217.4v-6.48a1.08,1.08,0,0,1,.08-0.42l6-14.62a1.09,1.09,0,0,1,1-.68h9.47l-3.57,14.46a4,4,0,0,0-.12,1v7.85H664.91A1.1,1.1,0,0,1,663.81,217.4Zm56,40.67h-8.86v-25a0.26,0.26,0,0,1,.26-0.26h8.33a0.26,0.26,0,0,1,.26.26v25Zm7.39-2.78a2.77,2.77,0,0,1-2.39,2.74V233.12a5.27,5.27,0,0,0-5.26-5.26h-8.33a5.27,5.27,0,0,0-5.26,5.26v25H673.78a2.78,2.78,0,0,1-2.78-2.78V223.5h56.17v31.79Zm7.2-37.89a1.1,1.1,0,0,1-1.1,1.1H721.48v-7.85a4.1,4.1,0,0,0-.12-1L717.8,195.2h6.26a169.32,169.32,0,0,0,10.31,15.94v6.26Zm12-.08a0.68,0.68,0,0,1-.55.28,0.68,0.68,0,0,1-.56-0.27,193.17,193.17,0,0,1-18-26.71V190.2H727c-3.18-6-4.92-10.93-4.94-14.23a23.46,23.46,0,0,1,23.31-23.62h0.16A23.46,23.46,0,0,1,769,175.66C769.07,183.07,760.61,198.65,746.39,217.33Z" transform="translate(-658.81 -147.35)" style="fill:#393c94"/><path d="M745.56,158.35a17.92,17.92,0,1,0,17.92,17.92A17.92,17.92,0,0,0,745.56,158.35Zm9.86,19.76h-8.36v8.17h-3v-8.17h-8v-3h8v-8.17h3v8.17h8.36v3Z" transform="translate(-658.81 -147.35)" style="fill:#393c94"/></svg>
 				<figcaption class="text-sm">Pelanggan akan berbelanja lebih sering dan lebih banyak</figcaption>
 			</figure>
@@ -43,14 +43,14 @@
 </section>
 
 
-<section class="bg-c-primary text-white">
-	<div class="flex items-center mx-auto py-10">
-		<div class="w-1/2">
+<section class="process bg-c-primary text-white">
+	<div class="flex lg:flex-row md:flex-row flex-col items-center mx-auto py-10">
+		<div class="lg:w-1/2 md:w-1/2 w-full lg:mb-0 md:mb-0 mb-10">
 			<img src="https://images.empatkali.co.id/rebranding/merchant-prosesnya%20sangat%20mudah.png" class="w-2/3 mx-auto" alt="">
 		</div>
-		<div class="w-1/2 pr-10">
-			<h4 class="text-3xl font-hairline leading-tight mb-10 pb-5 border-b border-white">PROSESNYA SANGAT MUDAH</strong></h4>
-			<ul>
+		<div class="lg:w-1/2 md:w-1/2 w-full lg:pr-10 md:pr-10 pr-0">
+			<h4 class="lg:text-left md:text-left text-center lg:mx-0 md:mx-0 mx-5 text-3xl font-hairline leading-tight mb-10 pb-5 border-b border-white">PROSESNYA SANGAT MUDAH</strong></h4>
+			<ul class="mx-5">
 				<li class="flex">
 					<div class="bg-white h-12 w-12 flex items-center justify-center rounded-full">
 						<svg class="text-c-primary w-6" data-name="Lengkapi Informasi Bisnismu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45.17 61.61"><title>Lengkapi Informasi Usaha Anda</title><path d="M660.88,450.84H654a10.67,10.67,0,0,0-21.33,0h-6.92a5,5,0,0,0-5,5v40.95a5,5,0,0,0,5,5h35.17a5,5,0,0,0,5-5V455.84A5,5,0,0,0,660.88,450.84Zm-22-1.05,2.24,2.24,6.62-6.62,2.51,2.51L641.11,457l-4.75-4.75Zm18.81,43.8H628.91v-4h28.77v4Zm0-9.2H628.91v-4h28.77v4Zm0-9.26H628.91v-4h28.77v4Zm0-9.2H628.91v-4h28.77v4Z" transform="translate(-620.71 -440.17)" style="fill:#393c94"/></svg>
@@ -93,10 +93,10 @@
 </section>
 
 <section class="bg-c-primary text-white border-t border-white">
-	<div class="flex items-center mx-auto py-10">
-		<div class="w-1/2 pl-10 text-right">
-			<h4 class="text-3xl font-hairline leading-tight mb-10 pb-5 border-b border-white">KAMI MENYEDIAKAN YANG TERBAIK</strong></h4>
-			<ul>
+	<div class="flex lg:flex-row md:flex-row flex-col items-center mx-auto pt-10">
+		<div class="lg:w-1/2 md:w-1/2 w-full lg:pl-10 md:pl-10 pl-0 text-right">
+			<h4 class="lg:mx-0 md:mx-0 mx-5 text-3xl font-hairline leading-tight mb-10 pb-5 border-b border-white">KAMI MENYEDIAKAN YANG TERBAIK</strong></h4>
+			<ul class="lg:mx-0 md:mx-0 mx-5">
 				<li class="flex mb-6 justify-end items-center">
 					<div class="mr-4">
 						<h6 class="text-lg">Kamu Akan Menerima Pembayaran Penuh</h6>
@@ -120,7 +120,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="w-1/2">
+		<div class="lg:w-1/2 md:w-1/2 w-full lg:mt-0 md:mt-0 mt-10">
 			<img src="https://images.empatkali.co.id/rebranding/merchant-kami-menyediakan-yang-terbaik.png" class="w-2/3 mx-auto" alt="">
 		</div>
 	</div>
@@ -129,55 +129,55 @@
 
 
 <section class="bg-c-F3F3F3">
-	<div class="w-10/12 mx-auto text-center py-20">
-		<h4 class="w-8/12 mx-auto text-3xl font-hairline leading-tight mb-10 pb-5 border-b border-c-primary">
+	<div class="lg:w-10/12 md:w-10/12 w-full mx-auto text-center py-20">
+		<h4 class="lg:w-8/12 md:w-8/12 w-11/12 mx-auto text-3xl font-hairline leading-tight mb-10 pb-5 border-b border-c-primary">
 			<strong class="font-bold">INTEGRASI</strong> MUDAH DAN CEPAT DENGAN BERBAGAI <strong class="font-bold">E-COMMERCE DAN POS PLATFORM</strong>
 		</h4>
-		<div class="bg-c-primary px-5 py-6 rounded-xl">
-			<ul class="flex justify-between items-center">
+		<div class="bg-c-primary px-5 lg:py-6 md:py-6 py-10 rounded-xl lg:mx-0 md:mx-0 mx-5">
+			<ul class="flex lg:flex-row md:flex-row flex-col justify-between items-center">
 				<li class="mr-5">
 					<a href="https://docs.empatkali.co.id/" target="_blank">
-						<img src="https://images.empatkali.co.id/logo/4x-api-logo.png" alt="">
+						<img src="https://images.empatkali.co.id/logo/4x-api-logo.png" alt="" class="lg:w-24 md:w-24 w-40 lg:mb-0 md:mb-0 mb-10">
 					</a>
 				</li>
 				<li class="mr-5">
 					<a href="http://ncommerce.id/" target="_blank">
-						<img src="https://images.empatkali.co.id/logo/ncommerce_logo.png" alt="">
+						<img src="https://images.empatkali.co.id/logo/ncommerce_logo.png" alt="" class="lg:w-24 md:w-24 w-40 lg:mb-0 md:mb-0 mb-10">
 					</a>
 				</li>
 				<li class="mr-5">
 					<a href="https://woocommerce.com/" target="_blank">
-						<img src="https://images.empatkali.co.id/logo/woocommerce_logo.png" alt="">
+						<img src="https://images.empatkali.co.id/logo/woocommerce_logo.png" alt="" class="lg:w-24 md:w-24 w-40 lg:mb-0 md:mb-0 mb-10">
 					</a>
 				</li>
 				<li class="mr-5">
 					<a href="https://www.82cart.com/" target="_blank">
-						<img src="https://images.empatkali.co.id/logo/82cart_logo.jpg" alt="">
+						<img src="https://images.empatkali.co.id/logo/82cart_logo.jpg" alt="" class="lg:w-24 md:w-24 w-40 lg:mb-0 md:mb-0 mb-10">
 					</a>
 				</li>
 				<li class="mr-5">
 					<a href="https://magento.com/" target="_blank">
-						<img src="https://images.empatkali.co.id/logo/magento.png" alt="">
+						<img src="https://images.empatkali.co.id/logo/magento.png" alt="" class="lg:w-24 md:w-24 w-40 lg:mb-0 md:mb-0 mb-10">
 					</a>
 				</li>
 				<li class="mr-5">
 					<a href="https://www.dealpos.co.id/" target="_blank">
-						<img src="https://images.empatkali.co.id/logo/dealpos_logo.png" alt="">
+						<img src="https://images.empatkali.co.id/logo/dealpos_logo.png" alt="" class="lg:w-24 md:w-24 w-40 lg:mb-0 md:mb-0 mb-10">
 					</a>
 				</li>
 				<li class="mr-5">
 					<a href="https://www.sirclo.com/" target="_blank">
-						<img src="https://images.empatkali.co.id/logo/sirclo.png" alt="">
+						<img src="https://images.empatkali.co.id/logo/sirclo.png" alt="" class="lg:w-24 md:w-24 w-40 lg:mb-0 md:mb-0 mb-10">
 					</a>
 				</li>
 				<li class="mr-5">
 					<a href="https://www.shopify.com/" target="_blank">
-						<img src="https://images.empatkali.co.id/logo/shopify.png" alt="">
+						<img src="https://images.empatkali.co.id/logo/shopify.png" alt="" class="lg:w-24 md:w-24 w-40 lg:mb-0 md:mb-0 mb-10">
 					</a>
 				</li>
 				<li>
 					<a href="https://wordpress.org/" target="_blank">
-						<img src="https://images.empatkali.co.id/logo/wordpress-logo.png" alt="">
+						<img src="https://images.empatkali.co.id/logo/wordpress-logo.png" alt="" class="lg:w-24 md:w-24 w-40 lg:mb-0 md:mb-0">
 					</a>
 				</li>
 			</ul>
@@ -186,14 +186,12 @@
 </section>
 
 
-
-
 <section class="bg-c-primary text-white">
-	<div class="w-8/12 mx-auto py-20 text-center">
+	<div class="lg:w-8/12 md:w-8/12 w-11/12 mx-auto py-20 text-center">
 		<h4 class="text-3xl font-hairline leading-tight mb-10 pb-5 border-b border-white">LET’S BE PARTNER!</h4>
 		<p class="text-sm mb-10">Isi formulir di bawah ini dan kami akan segera menghubungimu</p>
 
-		<a href="#" class="text-white inline-flex items-center bg-c-secondary py-3 px-6 rounded-full text-sm">
+		<a href="/partnership" class="text-white inline-flex items-center bg-c-secondary py-3 px-6 rounded-full text-sm">
 			DAFTAR SEKARANG <i class="fas fa-angle-right text-2xl ml-2"></i>
 		</a>
 	</div>
