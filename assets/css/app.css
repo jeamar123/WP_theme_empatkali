@@ -25606,7 +25606,6 @@ header.header .menu-main-nav-container ul.menu {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  flex-wrap: wrap;
 }
 
 header.header .menu-main-nav-container ul.menu li {
@@ -25779,14 +25778,29 @@ footer.footer .nav1 li a, footer.footer .nav2 li a {
 }
 
 @media all and (max-width: 480px) {
+  header.header > div {
+    padding-bottom: 0;
+  }
+
+  header.header .menu-main-nav-container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
   header.header .menu-main-nav-container ul.menu {
-    margin-left: -1.25rem;
-    margin-right: -1.25rem;
+    margin: 0;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   header.header .menu-main-nav-container ul.menu li {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-right: 0;
+  }
+
+  header.header .menu-main-nav-container ul.menu li a {
+    display: block;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 
   section.hero,

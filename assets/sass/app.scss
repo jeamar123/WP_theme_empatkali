@@ -147,9 +147,7 @@ header.header {
 		ul.menu {
 			@apply flex items-center justify-center;
 			margin: 0 auto;
-			// display: flex;
-			// align-items: center;
-			flex-wrap: wrap;
+			// flex-wrap: wrap;
 
 			li {
 				margin-right: 1.25rem;
@@ -199,7 +197,6 @@ section.partners {
 			position: relative;
 			z-index: 100;
 		}
-		// awts
 	}
 }
 
@@ -344,18 +341,27 @@ footer.footer {
 // ====================================================================
 @media all and (max-width: 480px) {
 	header.header {
+		& > div {
+			@apply pb-0;
+		}
+
 		.menu-main-nav-container {
+			@apply px-5;
+
 			ul.menu {
-				margin-left: -1.25rem;
-				margin-right: -1.25rem;
+				@apply m-0 flex-col items-start;
 
 				li {
-					margin-left: 1rem;
-					margin-right: 1rem;
+					@apply mr-0;
+
+					a {
+						@apply block py-2;
+					}
 				}
 			}
 		}
 	}
+	// awts
 	section.hero,
 	section.c4x-blog,
 	section.c4x-faq,
