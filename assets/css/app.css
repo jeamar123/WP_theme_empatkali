@@ -25593,6 +25593,85 @@ body {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
 }
 
+.modal-event .popup-container {
+  background-size: cover;
+  height: 100%;
+  padding-top: 1.5rem;
+  position: relative;
+  background: #3e43b8 url(https://images.empatkali.co.id/popup/2020/12/zilingo-15-31/bg.jpg) 0 0 no-repeat;
+  font-family: "Poppins", sans-serif;
+}
+
+.modal-event .popup-container:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: url(https://images.empatkali.co.id/popup/2020/12/zilingo-15-31/bottom-left-image.png) 0 bottom no-repeat;
+  background-size: 25%;
+}
+
+.modal-event .popup-container:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(https://images.empatkali.co.id/popup/2020/12/zilingo-15-31/right-bg.png) right center no-repeat;
+  background-size: 15%;
+}
+
+.modal-event .popup-container > div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-event .popup-container > div > img:nth-child(1) {
+  width: 30%;
+  margin-bottom: 1.5rem;
+}
+
+.modal-event .popup-container > div > img:nth-child(2) {
+  width: 35%;
+  margin-bottom: 1.5rem;
+}
+
+.modal-event .popup-container > div > img:nth-child(3) {
+  display: none;
+}
+
+.modal-event .popup-container > div > img:nth-child(4) {
+  width: 45%;
+  margin-bottom: 1.5rem;
+}
+
+.modal-event .popup-container > div > img:nth-child(5) {
+  width: 30%;
+  margin-bottom: 1.5rem;
+}
+
+.modal-event .popup-container > div a {
+  display: inline-block;
+  background: #fcf010;
+  color: #040630;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  position: relative;
+  z-index: 99999;
+}
+
+.modal-event .popup-container > div p {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  margin: 1rem 0;
+}
+
 header.header {
   z-index: 200;
 }
@@ -25778,6 +25857,53 @@ footer.footer .nav1 li a, footer.footer .nav2 li a {
 }
 
 @media all and (max-width: 480px) {
+  .modal-event .popup-container:before {
+    background: url(https://images.empatkali.co.id/popup/2020/12/zilingo-15-31/bottom-left-image.png) 0 bottom no-repeat;
+    background-size: 60%;
+    left: -10px;
+    bottom: -20px;
+  }
+
+  .modal-event .popup-container:after {
+    background: url(https://images.empatkali.co.id/popup/2020/12/zilingo-15-31/right-bg.png) right top no-repeat;
+    background-size: 50%;
+    right: -70px;
+    top: 30px;
+  }
+
+  .modal-event .popup-container > div > img:nth-child(1) {
+    width: 65%;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .modal-event .popup-container > div > img:nth-child(2) {
+    display: none;
+  }
+
+  .modal-event .popup-container > div > img:nth-child(3) {
+    display: block;
+    width: 50%;
+    margin-bottom: 1.5rem;
+  }
+
+  .modal-event .popup-container > div > img:nth-child(4) {
+    width: 70%;
+  }
+
+  .modal-event .popup-container > div > img:nth-child(5) {
+    width: 80%;
+  }
+
+  .modal-event .popup-container > div a {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .modal-event .popup-container > div p {
+    margin: 1rem 0 8rem;
+  }
+
   header.header > div {
     padding-bottom: 0;
   }

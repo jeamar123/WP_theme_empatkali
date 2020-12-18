@@ -84,6 +84,7 @@
 
 
 	<!-- Modal -->
+	<!-- Customer hotline -->
 	<a href="#" class="fixed bottom-0 right-0 bg-c-secondary mb-5 mr-5 lg:px-5 md:px-5 px-3 py-3 border-2 border-c-primary rounded-full flex items-center" onclick="openModal(event, 'CustomerHotline')">
 		<i class="far fa-question-circle text-2xl lg:mr-2 md:mr-2 mr-0"></i>
 		<span class="lg:inline-block md:inline-block hidden">Customer Help</span>
@@ -118,6 +119,31 @@
 			</form>
 		</div>
 	</div>
+
+
+	<!-- Events -->
+	<div class="modal-event fixed bg-black bg-opacity-50 w-full h-full text-black top-0" style="z-index: 999999;">
+		<div class="mx-auto lg:w-4/6 md:w-4/6 w-full relative bg-white rounded my-4 overflow-hidden">
+			<button class="mr-3 mt-2 text-sm absolute top-0 right-0 leading-none border-0 text-white" style="z-index: 99999;" onclick="openModal(event, 'CloseModalEvent')">Close</button>
+
+			<div class="popup-container">
+				<div>
+					<img src="https://images.empatkali.co.id/popup/2020/12/zilingo-15-31/zilingo-x-empatkali-logo.png" alt="" />
+
+					<img src="https://images.empatkali.co.id/popup/2020/12/zilingo-15-31/text-end-of-year.png?v" alt="" />
+					<img src="https://images.empatkali.co.id/popup/2020/12/zilingo-15-31/text-end-of-year-mobile.png?" alt="" />
+
+					<img src="https://images.empatkali.co.id/popup/2020/12/zilingo-15-31/text-gratis.png" alt="" />
+					<img src="https://images.empatkali.co.id/popup/2020/12/zilingo-15-31/keuntungan.png" alt="" />
+					<a href="https://blog.empatkali.co.id/2020/12/15/belanja-zilingo-cicilan-keempat-dibayarin/">BUY NOW, PAY LATER</a>
+					<p>*S&amp;K Berlaku</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
 </footer>
 
 
@@ -224,13 +250,22 @@
 
 	function openModal(evt, modalType) {
 		evt.preventDefault();
-		let frmCustomerHotline = document.getElementById('frmCustomerHotline');
-		// reset value
-		frmCustomerHotline.querySelector('input[name=name]').value = '';
-		frmCustomerHotline.querySelector('input[name=email]').value = '';
-		frmCustomerHotline.querySelector('input[name=mobile_no]').value = '';
-		frmCustomerHotline.querySelector('textarea[name=issue]').value = '';
-		document.querySelector('.modal-customer-help').style.display = 'flex';
+
+		switch (modalType) {
+			case 'CustomerHotline':
+				let frmCustomerHotline = document.getElementById('frmCustomerHotline');
+				// reset value
+				frmCustomerHotline.querySelector('input[name=name]').value = '';
+				frmCustomerHotline.querySelector('input[name=email]').value = '';
+				frmCustomerHotline.querySelector('input[name=mobile_no]').value = '';
+				frmCustomerHotline.querySelector('textarea[name=issue]').value = '';
+				document.querySelector('.modal-customer-help').style.display = 'flex';
+				break
+
+			case 'CloseModalEvent':
+				document.querySelector('.modal-event').style.display = 'none';
+				break
+		}
 	}
 </script>
 
