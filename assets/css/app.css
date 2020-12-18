@@ -25861,6 +25861,20 @@ div.page {
   li.test-zzz {
     width: 100% !important;
   }
+
+  footer.footer .modal-customer-help {
+    overflow-y: auto;
+    max-height: 100%;
+    flex-direction: column;
+  }
+
+  footer.footer .modal-customer-help h4 {
+    flex-shrink: 0;
+  }
+
+  footer.footer .modal-customer-help > div {
+    overflow-y: auto;
+  }
 }
 
 @media (min-width: 640px){

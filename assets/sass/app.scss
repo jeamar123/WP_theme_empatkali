@@ -429,4 +429,23 @@ footer.footer {
 	li.test-zzz {
 		width: 100% !important;
 	}
+
+
+	footer.footer {
+		.modal-customer-help {
+			@apply overflow-y-auto;
+
+			// height: calc(100vh - 100px);
+			max-height: 100%;
+		    flex-direction: column;
+
+		    h4 {
+		    	flex-shrink: 0;
+		    }
+
+		    & > div {
+		    	overflow-y: auto;
+		    }
+		}
+	}
 }

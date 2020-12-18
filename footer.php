@@ -88,7 +88,7 @@
 		<i class="far fa-question-circle text-2xl lg:mr-2 md:mr-2 mr-0"></i>
 		<span class="lg:inline-block md:inline-block hidden">Customer Help</span>
 	</a>
-	<div class="hidden modal-customer-help fixed bottom-0 right-0 lg:mb-5 md:mb-5 mb-0 lg:mr-5 md:mr-5 mr-0 border border-c-primary bg-white rounded-lg overflow-hidden lg:w-2/6 md:w-2/6 w-full" style="z-index: 9999">
+	<div class="hidden modal-customer-help flex-col fixed bottom-0 right-0 lg:mb-5 md:mb-5 mb-0 lg:mr-5 md:mr-5 mr-0 border border-c-primary bg-white rounded-lg overflow-hidden lg:w-2/6 md:w-2/6 w-full" style="z-index: 9999">
 		<h4 class="bg-c-primary text-center text-xl py-3 relative">
 			Customer Hotline
 			<a href="#" class="close text-white text-3xl absolute right-0 top-0 pr-5 mt-1">&times;</a>
@@ -230,7 +230,7 @@
 		frmCustomerHotline.querySelector('input[name=email]').value = '';
 		frmCustomerHotline.querySelector('input[name=mobile_no]').value = '';
 		frmCustomerHotline.querySelector('textarea[name=issue]').value = '';
-		document.querySelector('.modal-customer-help').style.display = 'block';
+		document.querySelector('.modal-customer-help').style.display = 'flex';
 	}
 </script>
 
