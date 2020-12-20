@@ -121,6 +121,13 @@
 	</div>
 
 
+
+	<?php
+
+	if (is_front_page()) {
+
+	?>
+
 	<!-- Events -->
 	<div class="modal-event fixed bg-black bg-opacity-50 w-full h-full text-black top-0" style="z-index: 999999;">
 		<div class="mx-auto lg:w-4/6 md:w-4/6 w-full relative bg-white rounded my-4 overflow-hidden">
@@ -142,6 +149,13 @@
 
 		</div>
 	</div>
+
+
+	<?php
+
+	}
+
+	?>
 
 
 </footer>
