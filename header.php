@@ -3,8 +3,6 @@
 // <!-- Create read me -->
 // <!-- https://serversideup.net/installing-tailwindcss-in-a-wordpress-theme/ -->
 // <!-- https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/ -->
-
-// just make all the images found here static instead of putting it inside oss bucket
 ?>
 
 <!DOCTYPE html>
@@ -20,6 +18,25 @@
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
   		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
   		crossorigin=""/>
+
+    <!-- start moEngage -->
+    <link rel="manifest" href="manifest.json">
+    <script type="text/javascript">
+    (function(i,s,o,g,r,a,m,n){
+    i['moengage_object']=r;t={}; q = function(f){return function(){(i['moengage_q']=i['moengage_q']||[]).push({f:f,a:arguments});};};
+    f = ['track_event','add_user_attribute','add_first_name','add_last_name','add_email','add_mobile',
+    'add_user_name','add_gender','add_birthday','destroy_session','add_unique_user_id','moe_events','call_web_push','track','location_type_attribute'];
+    for(k in f){t[f[k]]=q(f[k]);}
+    a=s.createElement(o);m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m);
+    i['moe']=i['moe'] || function(){n=arguments[0];return t;}; a.onload=function(){if(n){i[r] = moe(n);}};
+    })(window,document,'script','https://cdn.moengage.com/webpush/moe_webSdk.min.latest.js','Moengage');
+
+    Moengage = moe({
+    app_id:"",
+    debug_logs: 1
+    });
+    </script>
+    <!-- end moEngage -->  		
 
   	<style>
   		#menu-toggle:checked + #c4x-menu {
