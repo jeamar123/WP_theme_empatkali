@@ -56,6 +56,10 @@ function wpb_hook_javascript_footer() {
 add_action('wp_footer', 'wpb_hook_javascript_footer');
 
 
+// Add support for adding thumbnails
+add_theme_support( 'post-thumbnails' );
+
+
 // @Note:
 // - create separate helper
 // - should not accept multiple spaces ( )
