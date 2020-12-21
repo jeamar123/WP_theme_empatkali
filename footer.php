@@ -12,11 +12,11 @@
 					<img src="https://images.empatkali.co.id/ojk.png" class="h-10 lg:-mt-3 md:-mt-3 mt-0" alt="">
 				</a>
 				<!-- AFPI -->
-				<div class="inline-flex items-center lg:mr-2 md:mr-2 mr-0 lg:mt-0 md:mt-0 mt-6 lg:mb-0 md:mb-0 mb-4">
-					<img src="<?php echo bloginfo('template_url');?>/assets/images/afpi/logo.svg" class="mr-1 h-12" alt="">
-					<img src="<?php echo bloginfo('template_url');?>/assets/images/afpi/text-logo.svg" class="h-12" alt="">
+				<div class="inline-flex items-center lg:mr-3 md:mr-3 mr-0 lg:mt-0 md:mt-0 mt-6 lg:mb-0 md:mb-0 mb-4">
+					<img src="<?php echo bloginfo('template_url');?>/assets/images/afpi/logo.png" class="mr-1 h-10" alt="">
+					<img src="<?php echo bloginfo('template_url');?>/assets/images/afpi/text-logo.png" class="lg:h-10 md:h-10 h-10" alt="">
 				</div>
-				<img src="<?php echo bloginfo('template_url');?>/assets/images/cbqa-kan.svg" class="w-40" alt="">
+				<img src="<?php echo bloginfo('template_url');?>/assets/images/cbqa-kan.svg" class="h-12" alt="">
 			</div>
 		</div>
 	</div>
@@ -95,7 +95,7 @@
 	</div>
 
 	<div class="copyright bg-c-primary text-white text-center py-5">
-		<p class="lg:text-sm md:text-sm text-xs">Copyrights &copy; 2020 <strong>PT EMPAT KALI INDONESIA</strong>. All Rights Reserved.</p>
+		<p class="lg:text-sm md:text-sm text-xs">Copyright &copy; 2020 <strong>PT EMPAT KALI INDONESIA</strong>. All Rights Reserved.</p>
 	</div>
 
 
