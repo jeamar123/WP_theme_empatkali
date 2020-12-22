@@ -3,7 +3,7 @@
 	<div class="bg-c-4D539C">
 		<div class="flex lg:flex-row md:flex-row flex-col w-10/12 mx-auto lg:py-0 md:py-0 py-10">
 			<div class="lg:w-1/2 md:w-1/2 w-full inline-flex lg:flex-row md:flex-row flex-col items-center">
-				<img src="<?php echo bloginfo('template_url');?>/assets/images/empatkali-logo-all-white.svg" class="h-12 lg:mr-4 md:mr-4 mr-0 lg:-mt-1 md:-mt-1 mt-0 lg:mb-0 md:mb-0 mb-1" alt="">
+				<img src="<?php echo bloginfo('template_url');?>/assets/images/empatkali-logo-all-white.png" class="h-12 lg:mr-4 md:mr-4 mr-0 lg:-mt-1 md:-mt-1 mt-0 lg:mb-0 md:mb-0 mb-1" alt="">
 				<p class="font-light text-base">Aplikasi Pay Later mudah & aman</p>
 			</div>
 
@@ -16,7 +16,7 @@
 					<img src="<?php echo bloginfo('template_url');?>/assets/images/afpi/logo.png" class="mr-1 h-10" alt="">
 					<img src="<?php echo bloginfo('template_url');?>/assets/images/afpi/text-logo.png" class="lg:h-10 md:h-10 h-10" alt="">
 				</div>
-				<img src="<?php echo bloginfo('template_url');?>/assets/images/cbqa-kan.svg" class="h-12" alt="">
+				<img src="<?php echo bloginfo('template_url');?>/assets/images/cbqa-kan.png" class="h-12" alt="">
 			</div>
 		</div>
 	</div>
