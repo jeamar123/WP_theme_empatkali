@@ -26201,6 +26201,10 @@ div.page {
     padding-top: 13.15rem;
   }
 
+  section.c4x-blog .post-thumbnail-img img {
+    height: auto;
+  }
+
   .c-rasakan-pengalaman-baru-berbelanja-pakai-empatkali ol li span {
     min-width: 2.5rem;
   }
