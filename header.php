@@ -55,7 +55,7 @@
 	<div class="lg:w-10/12 md:w-10/12 w-11/12 mx-auto flex lg:flex-row md:flex-row flex-col justify-between lg:py-0 md:py-0 py-5 relative">
 		<div class="flex lg:flex-row md:flex-row flex-col items-center lg:justify-start md:justify-start justify-center lg:py-3 md:py-3 py-0">
 			<a href="<?php echo bloginfo('url'); ?>">
-				<img src="https://images.empatkali.co.id/rebranding/logo.png" class="w-40 lg:mb-0 md:mb-0 mb-4" alt="">
+				<img src="<?php echo bloginfo('template_url'); ?>/assets/images/empatkali-logo.png" class="w-40 lg:mb-0 md:mb-0 mb-4" alt="">
 			</a>
 			<div class="inline-flex items-center lg:border-l md:border-l border-0 border-gray-500 py-3 lg:pl-5 md:pl-5 pl-0 lg:ml-5 md:ml-5 ml-0 lg:mb-0 md:mb-0 mb-3">
 				<img src="https://images.empatkali.co.id/ojk-gray.png" class="w-48 -mt-2" alt="">

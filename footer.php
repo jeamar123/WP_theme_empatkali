@@ -1,5 +1,28 @@
 <footer class="footer text-white">
-	<div class="bg-c-secondary">
+
+	<div class="bg-c-4D539C">
+		<div class="flex lg:flex-row md:flex-row flex-col w-10/12 mx-auto lg:py-0 md:py-0 py-10">
+			<div class="lg:w-1/2 md:w-1/2 w-full inline-flex lg:flex-row md:flex-row flex-col items-center">
+				<img src="<?php echo bloginfo('template_url');?>/assets/images/empatkali-logo-all-white.png" class="h-12 lg:mr-4 md:mr-4 mr-0 lg:-mt-1 md:-mt-1 mt-0 lg:mb-0 md:mb-0 mb-1" alt="">
+				<p class="font-light text-base">Aplikasi Pay Later mudah & aman</p>
+			</div>
+
+			<div class="lg:w-1/2 md:w-1/2 w-full flex lg:flex-row md:flex-row flex-col justify-end items-center lg:py-5 md:py-5 py-0 lg:mt-0 md:mt-0 mt-6">
+				<a href="https://www.ojk.go.id/id/berita-dan-kegiatan/publikasi/Pages/Penyelenggara-Fintech-Terdaftar-di-OJK-per-8-April-2019.aspx" target="_blank" class="lg:mr-3 md:mr-3 mr-0">
+					<img src="https://images.empatkali.co.id/ojk.png" class="h-10 lg:-mt-3 md:-mt-3 mt-0" alt="">
+				</a>
+				<!-- AFPI -->
+				<div class="inline-flex items-center lg:mr-3 md:mr-3 mr-0 lg:mt-0 md:mt-0 mt-6 lg:mb-0 md:mb-0 mb-4">
+					<img src="<?php echo bloginfo('template_url');?>/assets/images/afpi/logo.png" class="mr-1 h-10" alt="">
+					<img src="<?php echo bloginfo('template_url');?>/assets/images/afpi/text-logo.png" class="lg:h-10 md:h-10 h-10" alt="">
+				</div>
+				<img src="<?php echo bloginfo('template_url');?>/assets/images/cbqa-kan.png" class="h-12" alt="">
+			</div>
+		</div>
+	</div>
+
+
+	<div class="bg-c-6166A8">
 		<div class="flex lg:flex-row md:flex-row flex-col w-10/12 mx-auto lg:py-20 md:py-20 py-10">
 			<div class="lg:w-1/3 md:w-1/3 w-full lg:mb-0 md:mb-0 mb-10 flex">
 				<?php
@@ -18,7 +41,7 @@
 
 				?>
 			</div>
-			<div class="lg:w-1/3 md:w-1/3 w-full text-center lg:mx-5 md:mx-5 mx-0 lg:mb-0 md:mb-0 mb-10">
+			<div class="lg:w-1/3 md:w-1/3 w-full lg:mx-5 md:mx-5 mx-0 lg:mb-0 md:mb-0 mb-10">
 				<p class="text-sm mb-2">Langganan newsletter kami untuk mendapatkan informasi dan penawaran menarik</p>
 				<div class="mb-4">
 					<div class="mt-1 relative rounded-md shadow-sm">
@@ -32,7 +55,7 @@
 						</form>
 					</div>
 				</div>
-				<div class="flex text-sm justify-center">
+				<div class="flex text-sm">
 					<label class="mr-5">Stay Connected</label>
 					<ul class="flex">
 						<li class="mr-3">
@@ -46,20 +69,19 @@
 							</a>
 						</li>
 						<li class="mr-3">
-							<a href="https://twitter.com/empatkali_ID" target="_blank">
-								<i class="fab fa-twitter text-lg"></i>
+							<a href="https://www.youtube.com/channel/UCMBhcYeYknQv6XxxbRQsx_g?view_as=subscriber" target="_blank">
+								<i class="fab fa-youtube text-lg"></i>
 							</a>
 						</li>
 						<li>
-							<a href="https://www.youtube.com/channel/UCMBhcYeYknQv6XxxbRQsx_g?view_as=subscriber" target="_blank">
-								<i class="fab fa-youtube text-lg"></i>
+							<a href="https://twitter.com/empatkali_ID" target="_blank">
+								<i class="fab fa-twitter text-lg"></i>
 							</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 			<div class="lg:w-1/3 md:w-1/3 w-full">
-				<img src="https://images.empatkali.co.id/rebranding/logo-with-tagline-white.png" class="w-64 mx-auto mb-6" alt="">
 				<div class="flex justify-center items-center mb-5">
 					<a href="https://apps.apple.com/us/app/empatkali/id1440454442" target="_blank" class="mr-3">
 						<img src="https://images.empatkali.co.id/download-istore.png" class="w-40" alt="">
@@ -68,18 +90,12 @@
 						<img src="https://images.empatkali.co.id/download-play-store.png" class="w-40" alt="">
 					</a>
 				</div>
-				<div class="flex justify-center items-center">
-					<a href="https://www.ojk.go.id/id/berita-dan-kegiatan/publikasi/Pages/Penyelenggara-Fintech-Terdaftar-di-OJK-per-8-April-2019.aspx" target="_blank" class="mr-3">
-						<img src="https://images.empatkali.co.id/ojk.png" class="w-40" alt="">
-					</a>
-					<img src="https://images.empatkali.co.id/afpi-logo.png" class="w-40" alt="">
-				</div>
 			</div>
 		</div>
 	</div>
 
 	<div class="copyright bg-c-primary text-white text-center py-5">
-		<p class="lg:text-sm md:text-sm text-xs">Copyrights &copy; 2020 <strong>PT EMPAT KALI INDONESIA</strong>. All Rights Reserved.</p>
+		<p class="lg:text-sm md:text-sm text-xs">Copyright &copy; 2020 <strong>PT EMPAT KALI INDONESIA</strong>. All Rights Reserved.</p>
 	</div>
 
 
