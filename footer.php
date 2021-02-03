@@ -145,21 +145,51 @@
 	?>
 
 	<!-- Events -->
-	<div class="modal-event hidden fixed bg-black bg-opacity-50 w-full h-full text-black top-0" style="z-index: 999999;">
-		<div class="mx-auto lg:w-4/6 md:w-4/6 w-full relative bg-white rounded my-4 overflow-hidden">
+	<div class="modal-event fixed bg-black bg-opacity-50 w-full h-full text-black top-0" style="z-index: 999999;">
+		<div class="mx-auto lg:w-4/6 md:w-5/6 w-full lg:h-auto md:auto h-full relative bg-white rounded lg:my-4 md:my-4 my-1 overflow-y-auto">
 			<button class="mr-3 mt-2 text-sm absolute top-0 right-0 leading-none border-0 text-white" style="z-index: 99999;" onclick="openModal(event, 'CloseModalEvent')">Close</button>
 
-			<div class="popup-container">
-				<div>
-					<img src="https://images.empatkali.co.id/popup/2020/12/zilingo-15-31/zilingo-x-empatkali-logo.png" alt="" />
+			<div class="popup-container flex items-center justify-end pt-8 text-white relative">
+				<img src="/wp-content/uploads/2021/02/balloon-oshop.png" class="absolute lg:block md:block hidden left-0 w-1/2" alt="">
+				<div class="lg:w-1/2 md:w-1/2 w-full relative z-50">
+					<header class="flex lg:justify-start md:justify-start justify-center items-center">
+						<img src="/wp-content/uploads/2021/02/logo-oshop.png" alt="">
+						<p class="font-medium lg:text-2xl md:text-2xl text-xl lg:leading-tight md:leading-tight leading-normal ml-4">
+							Birthday
+							<span class="lg:block md:block inline-block font-bold lg:text-3xl md:text-3xl text-xl">Sale 12</span>
+							<small class="block text-sm">1-28 Februari 2021</small>
+						</p>
+					</header>
+					<img src="/wp-content/uploads/2021/02/bareng-x-empatkali.png" class="mt-3 mb-5 bareng-x-empatkali" alt="">
 
-					<img src="https://images.empatkali.co.id/popup/2020/12/zilingo-15-31/text-end-of-year.png?v" alt="" />
-					<img src="https://images.empatkali.co.id/popup/2020/12/zilingo-15-31/text-end-of-year-mobile.png?" alt="" />
+					<div class="lg:hidden md:hidden block w-full">
+						<img src="/wp-content/uploads/2021/02/balloon-oshop.png" class="mob-balloon-oshop" alt="">
+					</div>
 
-					<img src="https://images.empatkali.co.id/popup/2020/12/zilingo-15-31/text-gratis.png" alt="" />
-					<img src="https://images.empatkali.co.id/popup/2020/12/zilingo-15-31/keuntungan.png" alt="" />
-					<a href="https://blog.empatkali.co.id/2020/12/15/belanja-zilingo-cicilan-keempat-dibayarin/">BUY NOW, PAY LATER</a>
-					<p>*S&amp;K Berlaku</p>
+					<div class="event-detail">
+						<p class="font-medium lg:text-2xl md:text-2xl text-lg lg:text-left md:text-right text-center lg:px-0 md:px-0 px-2">
+							<strong>Belanja di Oshop</strong> Serba Harga Rp<strong>120</strong>k<br />
+							<strong>Bayar</strong> Pakai <strong>EmpatKali, Tanpa Bunga</strong><br />
+							<span class="lg:text-3xl md:text-3xl text-xl"><strong>+ DISC 50K</strong> Cicilan ke 4!*</span>
+							<small class="block lg:text-base md:text-base text-sm">*syarat dan ketentuan berlaku</small>
+						</p>
+						<img src="/wp-content/uploads/2021/02/event-checklist.png" class="mt-4 mb-6 event-checklist" alt="">
+						<div class="lg:text-left md:text-left text-center">
+							<a href="https://empatkali.co.id/2021/01/31/oshop-anniversary-promo/" class="px-8 py-2 text-black lg:text-3xl md:text-3xl text-xl inline-block font-bold rounded-lg lg:mt-0 md:mt-0 mt-5"
+								style="background-color: #f6ff00;">Buy Now, Pay Later</a>
+							<div class="flex lg:flex-row md:flex-row flex-col items-center mt-6 mb-10">
+								<div class="download flex lg:w-1/2 md:w-1/2 w-2/3 lg:mr-16 md:mr-16 mr-0 lg:mb-0 md:mb-0 mb-3">
+									<a href="https://play.google.com/store/apps/details?id=id.empatkali" class="mr-2" target="_blank">
+										<img src="/wp-content/uploads/2021/02/download-play-store-en.png" alt="play store">
+									</a>
+									<a href="https://apps.apple.com/us/app/empatkali/id1440454442" target="_blank">
+										<img src="/wp-content/uploads/2021/02/download-app-store-en.png" alt="app store">
+									</a>
+								</div>
+								<img src="/wp-content/uploads/2021/02/ojk.png" class="w-40" alt="">
+							</div>
+						</div>
+					</div>	
 				</div>
 			</div>
 

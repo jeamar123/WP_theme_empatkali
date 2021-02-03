@@ -2,7 +2,7 @@
 
 function empatkali_register_styles() {
 	wp_enqueue_style( 'fontawesome-styles', get_template_directory_uri().'/node_modules/@fortawesome/fontawesome-free/css/all.css');
-	wp_enqueue_style( 'empatkali-styles', get_template_directory_uri().'/assets/css/app.css');
+	wp_enqueue_style( 'empatkali-styles', get_template_directory_uri().'/assets/css/app.css?v=1.0');
 }
 add_action( 'wp_enqueue_scripts', 'empatkali_register_styles' );
 
