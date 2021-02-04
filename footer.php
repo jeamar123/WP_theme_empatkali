@@ -349,6 +349,11 @@
 				console.log('err', err)
 			})
 		})
+
+		document.querySelector('.c-download a.close').addEventListener('click', function (e) {
+			e.preventDefault();
+			document.querySelector('.c-download').style.display = 'none';
+		});
 	});
 
 	function openModal(evt, modalType) {
