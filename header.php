@@ -51,7 +51,6 @@
 <body class="bg-white text-c-38424b" <?php body_class(); ?>>
 
 <header class="header bg-white fixed w-full text-gray-500" style="--bg-opacity: 0.95;">
-
 	<div class="lg:w-10/12 md:w-10/12 w-11/12 mx-auto flex lg:flex-row md:flex-row flex-col justify-between lg:py-0 md:py-0 py-5 relative">
 		<div class="flex lg:flex-row md:flex-row flex-col items-center lg:justify-start md:justify-start justify-center lg:py-3 md:py-3 py-0">
 			<a href="<?php echo bloginfo('url'); ?>">
@@ -75,6 +74,21 @@
 				'menu' => 'main-nav'
 			]);
 		?>
+		</div>
+	</div>
+
+	<div class="c-download bg-white px-4 pt-2 lg:hidden md:hidden block">
+		<label class="text-black block mb-1 text-xs">Belum punya aplikasi EmpatKali?</label>
+		<div class="flex justify-between items-center pb-2">
+			<div class="flex items-center">
+				<a href="https://apps.apple.com/us/app/empatkali/id1440454442" target="_blank" class="mr-2">
+					<img src="https://images.empatkali.co.id/download-istore.png" alt="" class="h-10">
+				</a>
+				<a href="https://play.google.com/store/apps/details?id=id.empatkali" target="_blank">
+					<img src="https://images.empatkali.co.id/download-play-store.png" alt="" class="h-10">
+				</a>
+			</div>
+			<a href="#" class="text-black text-2xl border-2 border-black inline-block w-5 h-5 flex items-center justify-center rounded-full close">&times;</a>
 		</div>
 	</div>
 </header>
