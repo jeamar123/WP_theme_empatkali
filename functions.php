@@ -438,7 +438,7 @@ function connectGopayRequest()	{
 		$context  = stream_context_create($options);
 		$result = file_get_contents($url, false, $context);
 		$keys = json_decode($result);
-		if ($keys->status_code == '200') { 
+		if ($keys->status_code == '200' || $keys->status_code == 200) { 
 			// wp_redirect("https://empatkali.co.id/gopay-success");
 			header("Location: https://empatkali.co.id/gopay-success");
 			exit();
