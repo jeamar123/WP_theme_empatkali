@@ -7,7 +7,6 @@ function empatkali_register_styles() {
 add_action( 'wp_enqueue_scripts', 'empatkali_register_styles' );
 
 
-
 // Count views
 function empatkali_set_post_views($postID) {
 	$count_key = 'empatkali_post_views_count';
@@ -403,5 +402,53 @@ function js_page_blog() {
 
 	<?php
 }
+
+
+
+add_action( 'init', 'rewrite_gopayRequest_route' );
+add_filter( 'query_vars', 'gopay_query_vars' );
+function rewrite_gopayRequest_route(){
+	add_rewrite_rule(
+		'connectGopay/([0-9]+)/?$',
+		'index.php?value=$matches[1]',
+		'top' 
+	);
+	add_rewrite_tag('%value%','([^&]+)');
+	connectGopayRequest();
+}
+function gopay_query_vars( $query_vars ){
+	$query_vars[] = 'value';
+	return $query_vars;
+}
+function connectGopayRequest()	{
+	if(strpos($_SERVER[REQUEST_URI], 'connectGopay')){
+		$current_url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+		$current_url = rtrim($current_url, "/");
+		if(preg_match("/\/(\d+)$/",$current_url,$matches)){
+			$end=$matches[1];
+		}
+		$md5 = md5("empatxGOPAYx4x" . $end );
+		$url = 'http://redirect.empatkali.co.id/gopay.php?id=' . $end . '&m=' . $md5;
+		$options = array(
+			'http' => array(
+				'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+				'method'  => 'POST',
+			)
+		);
+		$context  = stream_context_create($options);
+		$result = file_get_contents($url, false, $context);
+		$keys = json_decode($result);
+		if ($keys->status_code == '200') { 
+			// wp_redirect("https://empatkali.co.id/gopay-success");
+			header("Location: https://empatkali.co.id/gopay-success");
+			exit();
+		}else{
+			echo 'error' . $keys->account_status . ', code' . $keys->status_code;
+		}
+	}
+	
+}
+
+
 
 ?>
