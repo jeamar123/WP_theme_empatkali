@@ -443,7 +443,7 @@ function connectGopayRequest()	{
 			header("Location: https://empatkali.co.id/gopay-success");
 			exit();
 		}else{
-			echo 'error' . $keys->account_status . ', code' . $keys->status_code;
+			// echo 'error' . $keys->account_status . ', code' . $keys->status_code;
 		}
 	}
 	
