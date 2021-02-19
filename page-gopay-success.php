@@ -46,7 +46,7 @@
     <div class="text-center">
       <img src="<?php echo bloginfo('template_url'); ?>/assets/images/green-check.svg" alt="" class="mx-auto my-8 w-32">
       <p class="font-light text-3xl mx-auto w-7/12">Berhasil<br>Terhubung dengan</p>
-      <img src="<?php echo bloginfo('template_url'); ?>/assets/images/gopay-logo.svg" alt="" class="mx-auto my-8 w-80">
+      <img src="<?php echo bloginfo('template_url'); ?>/assets/images/gopay-logo.svg" alt="" class="mx-auto my-8 w-80" style="width: 320px;">
       <p class="font-normal text-2xl mx-auto w-11/12">Kamu akan menggunakan Gopay sebagai metode pembayaran pertama di setiap transaksi dengan Empatkali</p>
     </div>
   </section>
