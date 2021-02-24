@@ -25857,12 +25857,6 @@ body {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
 }
 
-.modal-event > div {
-  background: #ffa200 url(http://localhost:8888/empatkali.co.id/wp-content/uploads/2021/02/bg-oshop-web.png) center no-repeat;
-  font-family: "Poppins", sans-serif;
-  background-size: cover;
-}
-
 header.header {
   z-index: 200;
 }
@@ -25894,6 +25888,91 @@ header.header .menu-main-nav-container ul.menu a {
 header.header .menu-main-nav-container ul.menu li.current-menu-item a,
 header.header .menu-main-nav-container ul.menu a:hover {
   color: #393c94;
+}
+
+.c4x-slide-container {
+  /* The dots/bullets/indicators */
+}
+
+.c4x-slide-container .dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.c4x-slide-container .active {
+  background-color: #717171;
+}
+
+.c4x-slide-container .c4x-slides.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.c4x-slide-container .c4x-slides {
+  height: 40rem;
+}
+
+.c4x-slide-container .c4x-slides:nth-child(1) {
+  background: url(https://images.empatkali.co.id/website-slider/2020/12/planet-sports-asia/bg-web-view.jpg) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.c4x-slide-container .c4x-slides:nth-child(2) {
+  background: #3e43b8 url(https://images.empatkali.co.id/popup/2020/12/zilingo-15-31/bg.jpg) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.c4x-slide-container .c4x-slides:nth-child(2):before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: url(https://images.empatkali.co.id/popup/2020/12/zilingo-15-31/bottom-left-image.png) 0 bottom no-repeat;
+  background-size: 25%;
+}
+
+.c4x-slide-container .c4x-slides:nth-child(2):after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(https://images.empatkali.co.id/popup/2020/12/zilingo-15-31/right-bg.png) right center no-repeat;
+  background-size: 15%;
+}
+
+.c4x-slide-container .c4x-slides:nth-child(2) img:nth-child(1) {
+  width: 30%;
+  margin-bottom: 1.5rem;
+}
+
+.c4x-slide-container .c4x-slides:nth-child(2) img:nth-child(2) {
+  width: 35%;
+  margin-bottom: 1.5rem;
+}
+
+.c4x-slide-container .c4x-slides:nth-child(2) img:nth-child(3) {
+  display: none;
+}
+
+.c4x-slide-container .c4x-slides:nth-child(2) img:nth-child(4) {
+  width: 45%;
+  margin-bottom: 1.5rem;
+}
+
+.c4x-slide-container .c4x-slides:nth-child(2) img:nth-child(5) {
+  width: 30%;
+  margin-bottom: 1.5rem;
 }
 
 section.partners ul li:hover > div {
@@ -26048,53 +26127,51 @@ footer.footer .nav1 li a, footer.footer .nav2 li a {
 }
 
 @media all and (max-width: 480px) {
-  .modal-event > div {
-    background: #ffa200;
+  .c4x-slide-container {
+    padding-top: 8.6rem;
   }
 
-  .modal-event > div:before {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-image: url(/wp-content/uploads/2021/02/bg-oshop-mobile-top.png);
-    background-position: bottom center;
-    background-size: 100% 100%;
-    content: "";
-    height: 220px;
+  .c4x-slide-container .c4x-slides:nth-child(1) {
+    background: url(https://images.empatkali.co.id/website-slider/2020/12/planet-sports-asia/bg-mobile-view.jpg) bottom center no-repeat;
+    background-size: 100%;
   }
 
-  .modal-event .popup-container header > img {
-    height: 70px;
+  .c4x-slide-container .c4x-slides:nth-child(2):before {
+    background: url(https://images.empatkali.co.id/popup/2020/12/zilingo-15-31/bottom-left-image.png) 0 bottom no-repeat;
+    background-size: 60%;
+    left: -10px;
+    bottom: -20px;
   }
 
-  .modal-event .popup-container > div > img {
-    margin-left: auto;
-    margin-right: auto;
+  .c4x-slide-container .c4x-slides:nth-child(2):after {
+    background: url(https://images.empatkali.co.id/popup/2020/12/zilingo-15-31/right-bg.png) right top no-repeat;
+    background-size: 50%;
+    right: -70px;
+    top: 30px;
   }
 
-  .modal-event .popup-container img.bareng-x-empatkali {
-    width: 70%;
+  .c4x-slide-container .c4x-slides:nth-child(2) img:nth-child(1) {
+    width: 65%;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
   }
 
-  .modal-event .popup-container img.event-checklist {
+  .c4x-slide-container .c4x-slides:nth-child(2) img:nth-child(2) {
     display: none;
   }
 
-  .modal-event .popup-container .mob-balloon-oshop {
-    margin-bottom: 70px;
+  .c4x-slide-container .c4x-slides:nth-child(2) img:nth-child(3) {
+    display: block;
+    width: 50%;
+    margin-bottom: 1.5rem;
   }
 
-  .modal-event .event-detail {
-    width: 100%;
-    background-repeat: no-repeat;
-    background-image: url(/wp-content/uploads/2021/02/bg-oshop-mobile-bottom.png);
-    background-position: bottom center;
-    background-size: 100% 95%;
-    padding-top: 6rem;
-    margin-top: -6rem;
-    border: 1px solid transparent;
+  .c4x-slide-container .c4x-slides:nth-child(2) img:nth-child(4) {
+    width: 70%;
+  }
+
+  .c4x-slide-container .c4x-slides:nth-child(2) img:nth-child(5) {
+    width: 80%;
   }
 
   header.header > div {
@@ -26197,6 +26274,26 @@ div.page {
 
   footer.footer .modal-customer-help > div {
     overflow-y: auto;
+  }
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
   }
 }
 

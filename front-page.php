@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="hero pt-20 bg-c-primary text-white">
+<!-- <section class="hero pt-20 bg-c-primary text-white">
 	<div class="w-10/12 mx-auto flex lg:flex-row md:flex-row flex-col lg:py-20 md:py-20 py-16 lg:text-left md:text-left text-center">
 		<div class="lg:w-7/12 md:w-7/12 w-full flex flex-col justify-center lg:pl-16 md:pl-16 pl-0 lg:pr-5 md:pr-5 pr-0 lg:mb-0 md:mb-0 mb-10">
 			<h2 class="text-4xl leading-tight mb-3">BELI SEKARANG, BAYAR BELAKANGAN, BUNGA 0% SELAMANYA</h2>
@@ -17,6 +17,81 @@
 		<div class="lg:w-5/12 md:w-5/12 w-full">
 			<img src="https://images.empatkali.co.id/rebranding/hero-home.png" alt="">
 		</div>
+	</div>
+</section> -->
+
+
+<!-- <section class="pt-20 bg-c-primary text-white c4x-slide-container relative h-screen overflow-hidden"> -->
+<section class="pt-20 bg-c-primary text-white c4x-slide-container relative overflow-hidden">
+
+	<!-- =================================== Slider 1 =================================== -->
+	<div class="bg-c-primary c4x-slides h-full hidden bg-cover fade">
+		<div class="w-11/12 mx-auto flex lg:justify-end md:justify-end justify-start lg:mt-0 md:mt-0 mt-10 lg:flex-row md:flex-row flex-col lg:text-left md:text-left text-center items-center">
+			<div class="lg:w-6/12 md:w-6/12 w-9/12 flex flex-col items-center">
+				<img src="https://images.empatkali.co.id/website-slider/2020/12/planet-sports-asia/empatkali-x-psa-logo.png" class="lg:w-3/5 md:w-3/5 w-full mb-12" alt="">
+				<img src="https://images.empatkali.co.id/website-slider/2020/12/planet-sports-asia/desc.png" class="lg:w-2/4 md:w-2/4 w-full mb-4" alt="">
+				<img src="https://images.empatkali.co.id/website-slider/2020/12/planet-sports-asia/checkboxes.png" class="lg:mb-6 md:mb-6 mb-40" alt="">
+
+				<a href="https://empatkali.co.id/2020/12/22/planet-sports-asia-empatkali/" class="text-black px-5 py-1 text-lg font-bold rounded-lg" style="background: #e2cc38">Buy Now, Pay Later</a>
+
+				<div class="lg:mt-16 md:mt-16 mt-6 lg:px-10 md:px-10 px-0 flex justify-between w-full items-center lg:flex-row md:flex-row flex-col">
+					<div class="flex lg:mb-0 md:mb-0 mb-10">
+						<a href="https://play.google.com/store/apps/details?id=id.empatkali" target="_blank">
+							<img src="https://images.empatkali.co.id/download-play-store-en.png" class="w-40" alt="">
+						</a>
+						<a href="https://apps.apple.com/us/app/empatkali/id1440454442" target="_blank" class=" ml-3">
+							<img src="https://images.empatkali.co.id/download-app-store-en.png" class="w-40" alt="">
+						</a>
+					</div>
+					<img src="https://images.empatkali.co.id/ojk.png" class="h-8 lg:-mt-3 md:-mt-3 mt-0" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- =================================== ./ Slider 1 =================================== -->
+
+	<!-- =================================== ./ Slider 2 =================================== -->
+	<div class="bg-c-primary c4x-slides h-full hidden bg-cover fade">
+		<div class="lg:w-10/12 md:w-10/12 w-full mx-auto flex flex-col items-center justify-center">
+			<img src="https://images.empatkali.co.id/popup/2020/12/zilingo-15-31/zilingo-x-empatkali-logo.png" alt="" />
+
+			<img src="https://images.empatkali.co.id/popup/2020/12/zilingo-15-31/text-end-of-year.png" alt="" />
+			<img src="https://images.empatkali.co.id/popup/2020/12/zilingo-15-31/text-end-of-year-mobile.png" alt="" />
+
+			<img src="https://images.empatkali.co.id/popup/2020/12/zilingo-15-31/text-gratis.png" alt="" />
+			<img src="https://images.empatkali.co.id/popup/2020/12/zilingo-15-31/keuntungan.png" alt="" />
+			<a href="https://blog.empatkali.co.id/2020/12/15/belanja-zilingo-cicilan-keempat-dibayarin/" class="text-black px-10 py-5 text-lg mb-10" style="background: #fcf010; position: relative; z-index: 99999;">BUY NOW, PAY LATER</a>
+			<p style="position: relative; z-index: 999999;">*S&amp;K Berlaku</p>
+		</div>
+	</div>
+	<!-- =================================== ./ Slider 2 =================================== -->
+
+	<!-- =================================== ./ Slider 3 =================================== -->
+	<div class="bg-c-primary c4x-slides h-full hidden fade">
+		<div class="lg:pt-0 md:pt-0 pt-5 w-10/12 mx-auto flex lg:flex-row md:flex-row flex-col lg:text-left md:text-left text-center items-center">
+			<div class="lg:w-7/12 md:w-7/12 w-full flex flex-col justify-center lg:pl-16 md:pl-16 pl-0 lg:pr-5 md:pr-5 pr-0 lg:mb-0 md:mb-0 mb-10">
+				<h2 class="text-4xl leading-tight mb-3">BELI SEKARANG, BAYAR BELAKANGAN, BUNGA 0% SELAMANYA</h2>
+				<p class="font-light text-sm">Beli barang incaranmu di partner merchant kami. Bayar pakai EMPATKALI. Nikmati fasilitas cicilan bunga 0% selamanya!</p>
+				<div class="mt-8 flex">
+					<a href="https://apps.apple.com/us/app/empatkali/id1440454442" target="_blank">
+						<img src="https://images.empatkali.co.id/download-istore.png" class="w-40" alt="">
+					</a>
+					<a href="https://play.google.com/store/apps/details?id=id.empatkali" target="_blank" class=" ml-5">
+						<img src="https://images.empatkali.co.id/download-play-store.png" class="w-40" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="lg:w-5/12 md:w-5/12 w-full">
+				<img src="https://images.empatkali.co.id/rebranding/hero-home.png" alt="">
+			</div>
+		</div>
+	</div>
+	<!-- =================================== ./ Slider 3 =================================== -->
+
+	<div class="absolute text-right inset-x-0 bottom-0 lg:mb-3 md:mb-3 mb-0 mr-3">
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
 	</div>
 </section>
 
