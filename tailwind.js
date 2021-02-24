@@ -22,6 +22,10 @@ module.exports = {
         'c-98A2AB': '#98A2AB',
         'c-4D539C': '#4D539C',
         'c-6166A8': '#6166A8',
+
+        // commonly used on sliders, fuuuuuu
+        'c-fbe521': '#fbe521',
+        'c-3b3969': '#3b3969',
     	}
     },
   },

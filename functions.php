@@ -94,7 +94,7 @@ function js_page_home_page() {
 				}
 				slides[slideIndex-1].style.display = 'flex';
 				dots[slideIndex-1].className += " active";
-				setTimeout(showSlides, 5000);
+				// setTimeout(showSlides, 5000);
 			}
 		});
     </script>
