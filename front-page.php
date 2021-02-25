@@ -11,7 +11,7 @@
 				<img src="https://empatkali.co.id/wp-content/uploads/2021/02/makin-mudah-pakai-gopay.png" class="mb-5 w-5/6" alt="">
 				<img src="https://empatkali.co.id/wp-content/uploads/2021/02/keuntungan-1.png" class="mb-10 keuntungan-1" alt="">
 
-				<a href="https://empatkali.co.id/2021/02/17/potongan-100k-merchant/" class="bg-c-fbe521 text-black text-lg py-1 px-10 inline-block rounded-lg lg:text-3xl md:text-3xl text-base font-semibold lg:mb-10 md:mb-10 mb-5">LEARN MORE</a>
+				<a href="https://empatkali.co.id/2021/02/23/empatkali-gopay-launch/" class="bg-c-fbe521 text-black text-lg py-1 px-10 inline-block rounded-lg lg:text-3xl md:text-3xl text-base font-semibold lg:mb-10 md:mb-10 mb-5">LEARN MORE</a>
 
 				<div class="flex lg:flex-row md:flex-row flex-col justify-end">
 					<div class="flex lg:w-1/2 md:w-1/2 w-full lg:justify-start md:justify-start justify-center lg:mb-0 md:mb-0 mb-2">
