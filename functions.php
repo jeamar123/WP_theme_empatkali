@@ -1,8 +1,10 @@
 <?php
 
+define('THEME_VERSION', wp_get_theme()->get('Version'));
+
 function empatkali_register_styles() {
 	wp_enqueue_style( 'fontawesome-styles', get_template_directory_uri().'/node_modules/@fortawesome/fontawesome-free/css/all.css');
-	wp_enqueue_style( 'empatkali-styles', get_template_directory_uri().'/assets/css/app.css?v=1.0');
+	wp_enqueue_style( 'empatkali-styles', get_template_directory_uri().'/assets/css/app.css', [], THEME_VERSION);
 }
 add_action( 'wp_enqueue_scripts', 'empatkali_register_styles' );
 
@@ -39,7 +41,7 @@ add_theme_support( 'menus' );
 // Load javascript based on pages
 function wpb_hook_javascript_footer() {
 	if ( is_front_page() ) {
-		// js_page_home_page();
+		js_page_home_page();
 	} else if (is_page('partnership')) {
     	js_page_partnership();
 	} else if (is_page('contact-us')) {
@@ -63,6 +65,44 @@ add_theme_support( 'post-thumbnails' );
 // - create separate helper
 // - should not accept multiple spaces ( )
 // - document ready
+function js_page_home_page() {
+	?>
+    <script>
+		function ready(fn) {
+			if (document.readyState != 'loading'){
+				fn();
+			} else {
+				document.addEventListener('DOMContentLoaded', fn);
+			}
+		}
+
+		ready(function () {
+			let slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+				let slides = document.getElementsByClassName('c4x-slides'),
+					dots = document.getElementsByClassName("dot");
+
+				for (let i = 0; i < slides.length; i++ ) {
+					slides[i].style.display = 'none';
+				}
+				slideIndex++;
+				if ( slideIndex > slides.length ) {
+					slideIndex = 1;
+				}
+				for (let i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = 'flex';
+				dots[slideIndex-1].className += " active";
+				setTimeout(showSlides, 5000);
+			}
+		});
+    </script>
+    <?php
+}
+
 function js_page_partnership() {
 	?>
     <script>
@@ -358,7 +398,6 @@ function js_page_view_partners() {
 
 function js_page_blog() {
 	?>
-
 	<script>
 		function ready(fn) {
 			if (document.readyState != 'loading'){
@@ -399,7 +438,6 @@ function js_page_blog() {
 			})
 		});
 	</script>
-
 	<?php
 }
 
@@ -421,7 +459,7 @@ function gopay_query_vars( $query_vars ){
 	return $query_vars;
 }
 function connectGopayRequest()	{
-	if(strpos($_SERVER[REQUEST_URI], 'connectGopay')){
+	if(@strpos($_SERVER[REQUEST_URI], 'connectGopay')){
 		$current_url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 		$current_url = rtrim($current_url, "/");
 		if(preg_match("/\/(\d+)$/",$current_url,$matches)){

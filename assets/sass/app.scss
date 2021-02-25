@@ -133,14 +133,6 @@ body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 }
 
-.modal-event {
-	& > div {
-		background: #ffa200 url(http://localhost:8888/empatkali.co.id/wp-content/uploads/2021/02/bg-oshop-web.png) center no-repeat;
-		font-family: 'Poppins', sans-serif;
-		background-size: cover;
-	}
-}
-
 
 // ====================================================================
 //  [Section] - Header
@@ -178,6 +170,77 @@ header.header {
 //  [Page] - Home page
 // ====================================================================
 section.hero {}
+
+// 
+//  Slider
+// --------------------------------------------------------------------
+.c4x-slide-container {
+
+	/* The dots/bullets/indicators */
+	.dot {
+		height: 15px;
+		width: 15px;
+		margin: 0 2px;
+		background-color: #bbb;
+		border-radius: 50%;
+		display: inline-block;
+		transition: background-color 0.6s ease;
+	}
+	.active {
+		background-color: #717171;
+	}
+
+
+	.c4x-slides.fade {
+		-webkit-animation-name: fade;
+		-webkit-animation-duration: 1.5s;
+		animation-name: fade;
+		animation-duration: 1.5s;
+	}
+	.c4x-slides {
+		height: 42rem;
+
+
+		&:nth-child(1) {
+			background: url(https://empatkali.co.id/wp-content/uploads/2021/02/bg-1.png) 0 0 no-repeat;
+			// background-size: 100% 100%;
+			background-size: cover;
+			font-family: 'Poppins', sans-serif;
+		}
+
+
+		&:nth-child(2) {
+			background: url(https://empatkali.co.id/wp-content/uploads/2021/02/bg.png) 0 0 no-repeat;
+			background-size: cover;
+			font-family: 'Poppins', sans-serif;
+		}
+
+		&:nth-child(2) > div {
+			&:before {
+				content: '';
+				position: absolute; bottom: -12rem; left: -7rem; z-index: 40;
+				width: 100%; height: 100%;
+				background: url(https://empatkali.co.id/wp-content/uploads/2021/02/bg-lightning-left.png) bottom left no-repeat;
+			}
+
+			&:after {
+				content: '';
+				position: absolute; top: 0; right: 0; z-index: 40;
+				width: 100%; height: 100%;
+				background: url(https://empatkali.co.id/wp-content/uploads/2021/02/bg-right-lightning.png) right bottom no-repeat;
+			}
+
+			img.ga-perlu-nunggu-gajian {
+				width: 20rem;
+			}
+
+			img.event-cart-img {
+				 top:-13rem;
+			}
+		}
+	}
+}
+
 
 section.partners {
 	ul li:hover > div {
@@ -347,51 +410,42 @@ footer.footer {
 //  Media Queries
 // ====================================================================
 @media all and (max-width: 480px) {
+	// 
+	//  Slider
+	// --------------------------------------------------------------------
+	.c4x-slide-container {
+		padding-top: 8.6rem;
 
-	.modal-event {
-		& > div {
-			background: #ffa200;
+		.c4x-slides {
 
-			&:before {
-				@apply absolute left-0 top-0 w-full bg-no-repeat;
-				background-image: url(/wp-content/uploads/2021/02/bg-oshop-mobile-top.png);
-				background-position: bottom center;
-				background-size: 100% 100%;
-				content: '';
-				height: 220px;
+			&:nth-child(1) {
+				background: url(https://empatkali.co.id/wp-content/uploads/2021/02/bg-mv.png) 0 0 no-repeat;
+				background-size: cover;
+
+				img.keuntungan-1 {
+					margin-bottom: 13rem;
+				}
+			}
+
+			&:nth-child(2) {
+				background-image: url(https://empatkali.co.id/wp-content/uploads/2021/02/mob-bg.png);
+				font-family: 'Poppins', sans-serif;
+			}
+
+			&:nth-child(2) > div {
+				&:before, &:after {
+					display: none;
+				}
+				img.ga-perlu-nunggu-gajian {
+					width: 13rem;
+				}
+				img.mob-event-cart-img {
+					 top: -13.25rem;
+					 left: 1.25rem;
+				}
 			}
 		}
-	  .popup-container {
-			header > img {
-				height: 70px;
-			}
-
-			& > div > img { @apply mx-auto; }
-
-			img.bareng-x-empatkali {
-				width: 70%;
-			}
-			img.event-checklist {
-				@apply hidden;
-			}
-			.mob-balloon-oshop {
-				margin-bottom: 70px; 
-			}
-	  }
-	  .event-detail {
-			@apply w-full bg-no-repeat;
-			background-image: url(/wp-content/uploads/2021/02/bg-oshop-mobile-bottom.png);
-			background-position: bottom center;
-			background-size: 100% 95%;
-			padding-top: 6rem;
-			margin-top: -6rem;
-			border: 1px solid transparent; // hacked, panuway
-	  }
 	}
-
-
-
-
 
 	header.header {
 		& > div {
@@ -508,4 +562,18 @@ footer.footer {
 		    }
 		}
 	}
+}
+
+
+// ====================================================================
+//  Animations
+// ====================================================================
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
