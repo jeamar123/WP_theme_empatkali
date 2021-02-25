@@ -4,6 +4,35 @@
 
 	<!-- =================================== Slider 1 =================================== -->
 	<div class="bg-c-primary c4x-slides h-full hidden bg-cover fade">
+		<div class="lg:w-8/12 md:w-8/12 w-11/12 mx-auto flex items-center justify-end">
+			<div class="lg:w-1/2 md:w-1/2 w-full flex flex-col lg:items-end md:items-end items-center">
+				<h4 class="lg:text-4xl md:text-4xl text-3xl leading-none mb-5">Sekarang Bayar</h4>
+				<img src="https://empatkali.co.id/wp-content/uploads/2021/02/cicilan-x-empatkali.png" class="mb-5 lg:w-3/4 md:w-3/4 w-5/6" alt="">
+				<img src="https://empatkali.co.id/wp-content/uploads/2021/02/makin-mudah-pakai-gopay.png" class="mb-5 w-5/6" alt="">
+				<img src="https://empatkali.co.id/wp-content/uploads/2021/02/keuntungan-1.png" class="mb-10 keuntungan-1" alt="">
+
+				<a href="https://empatkali.co.id/2021/02/17/potongan-100k-merchant/" class="bg-c-fbe521 text-black text-lg py-1 px-10 inline-block rounded-lg lg:text-3xl md:text-3xl text-base font-semibold lg:mb-10 md:mb-10 mb-5">LEARN MORE</a>
+
+				<div class="flex lg:flex-row md:flex-row flex-col justify-end">
+					<div class="flex lg:w-1/2 md:w-1/2 w-full lg:justify-start md:justify-start justify-center lg:mb-0 md:mb-0 mb-2">
+						<a href="https://play.google.com/store/apps/details?id=id.empatkali" target="_blank" class="mr-2 lg:w-full md:w-full w-24">
+							<img src="https://empatkali.co.id/wp-content/uploads/2021/02/download-play-store-en.png" alt="">
+						</a>
+						<a href="https://apps.apple.com/us/app/empatkali/id1440454442" target="_blank" class=" lg:w-full md:w-full w-24">
+							<img src="https://empatkali.co.id/wp-content/uploads/2021/02/download-app-store-en.png" alt="">
+						</a>
+					</div>
+					<img src="https://empatkali.co.id/wp-content/uploads/2021/02/ojk.png" class="lg:w-1/3 md:w-1/3 w-24 lg:ml-5 md:ml-5 mx-auto" alt="">
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- =================================== ./ Slider 1 =================================== -->
+
+
+	<!-- =================================== Slider 1 =================================== -->
+	<div class="bg-c-primary c4x-slides h-full hidden bg-cover fade">
 		<div class="w-10/12 mx-auto flex flex-col justify-center">
 			<div class="flex lg:mb-5 md:mb-5 mb-40 lg:flex-row md:flex-row flex-col">
 				<div class="lg:w-3/6 md:w-3/6 w-full lg:py-0 md:py-0 py-3">
@@ -38,7 +67,7 @@
 						<a href="https://play.google.com/store/apps/details?id=id.empatkali" target="_blank" class="mr-2 lg:w-full md:w-full w-24">
 							<img src="https://empatkali.co.id/wp-content/uploads/2021/02/download-play-store-en.png" alt="">
 						</a>
-						<a href="https://apps.apple.com/us/app/empatkali/id1440454442" target="_blank" class="lg:w-full md:w-full w-24">
+						<a href="https://apps.apple.com/us/app/empatkali/id1440454442" target="_blank" class=" lg:w-full md:w-full w-24">
 							<img src="https://empatkali.co.id/wp-content/uploads/2021/02/download-app-store-en.png" alt="">
 						</a>
 					</div>
@@ -79,7 +108,7 @@
 	<div class="absolute text-right inset-x-0 bottom-0 lg:mb-3 md:mb-3 mb-0 mr-3">
 		<span class="dot"></span>
 		<span class="dot"></span>
-		<!-- <span class="dot"></span> -->
+		<span class="dot"></span>
 	</div>
 </section>
 

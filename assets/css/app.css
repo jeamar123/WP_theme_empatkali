@@ -26183,21 +26183,19 @@ header.header .menu-main-nav-container ul.menu a:hover {
   height: 42rem;
 }
 
-.c4x-slide-container .c4x-slides img.ga-perlu-nunggu-gajian {
-  width: 20rem;
-}
-
-.c4x-slide-container .c4x-slides img.event-cart-img {
-  top: -13rem;
-}
-
 .c4x-slide-container .c4x-slides:nth-child(1) {
+  background: url(https://empatkali.co.id/wp-content/uploads/2021/02/bg-1.png) 0 0 no-repeat;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+}
+
+.c4x-slide-container .c4x-slides:nth-child(2) {
   background: url(https://empatkali.co.id/wp-content/uploads/2021/02/bg.png) 0 0 no-repeat;
   background-size: cover;
   font-family: "Poppins", sans-serif;
 }
 
-.c4x-slide-container .c4x-slides:nth-child(1) > div:before {
+.c4x-slide-container .c4x-slides:nth-child(2) > div:before {
   content: "";
   position: absolute;
   bottom: -12rem;
@@ -26208,7 +26206,7 @@ header.header .menu-main-nav-container ul.menu a:hover {
   background: url(https://empatkali.co.id/wp-content/uploads/2021/02/bg-lightning-left.png) bottom left no-repeat;
 }
 
-.c4x-slide-container .c4x-slides:nth-child(1) > div:after {
+.c4x-slide-container .c4x-slides:nth-child(2) > div:after {
   content: "";
   position: absolute;
   top: 0;
@@ -26217,6 +26215,14 @@ header.header .menu-main-nav-container ul.menu a:hover {
   width: 100%;
   height: 100%;
   background: url(https://empatkali.co.id/wp-content/uploads/2021/02/bg-right-lightning.png) right bottom no-repeat;
+}
+
+.c4x-slide-container .c4x-slides:nth-child(2) > div img.ga-perlu-nunggu-gajian {
+  width: 20rem;
+}
+
+.c4x-slide-container .c4x-slides:nth-child(2) > div img.event-cart-img {
+  top: -13rem;
 }
 
 section.partners ul li:hover > div {
@@ -26376,21 +26382,30 @@ footer.footer .nav1 li a, footer.footer .nav2 li a {
   }
 
   .c4x-slide-container .c4x-slides:nth-child(1) {
+    background: url(https://empatkali.co.id/wp-content/uploads/2021/02/bg-mv.png) 0 0 no-repeat;
+    background-size: cover;
+  }
+
+  .c4x-slide-container .c4x-slides:nth-child(1) img.keuntungan-1 {
+    margin-bottom: 13rem;
+  }
+
+  .c4x-slide-container .c4x-slides:nth-child(2) {
     background-image: url(https://empatkali.co.id/wp-content/uploads/2021/02/mob-bg.png);
     font-family: "Poppins", sans-serif;
   }
 
-  .c4x-slide-container .c4x-slides img.ga-perlu-nunggu-gajian {
+  .c4x-slide-container .c4x-slides:nth-child(2) > div:before, .c4x-slide-container .c4x-slides:nth-child(2) > div:after {
+    display: none;
+  }
+
+  .c4x-slide-container .c4x-slides:nth-child(2) > div img.ga-perlu-nunggu-gajian {
     width: 13rem;
   }
 
-  .c4x-slide-container .c4x-slides img.mob-event-cart-img {
+  .c4x-slide-container .c4x-slides:nth-child(2) > div img.mob-event-cart-img {
     top: -13.25rem;
     left: 1.25rem;
-  }
-
-  .c4x-slide-container .c4x-slides:nth-child(1) > div:before, .c4x-slide-container .c4x-slides:nth-child(1) > div:after {
-    display: none;
   }
 
   header.header > div {
