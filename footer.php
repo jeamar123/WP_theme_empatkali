@@ -285,6 +285,11 @@
 			e.preventDefault();
 			document.querySelector('.c-download').style.display = 'none';
 		});
+
+		if(document.documentElement.clientWidth < 768){
+			console.log(document.documentElement.clientWidth);
+			document.getElementById("mob-c-dowload").innerHTML += '<img src="https://view.adjust.com/impression/1ar4n2t?label=Web_Sticky_Download_Label&engagement_type=fallback_click&redirect_android=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Did.empatkali&redirect_ios=https%3A%2F%2Fapps.apple.com%2Fus%2Fapp%2Fempatkali%2Fid1440454442" alt="">';
+		}
 	});
 
 	function openModal(evt, modalType) {
