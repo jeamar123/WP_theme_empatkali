@@ -275,17 +275,11 @@
 		</div>
 	</div>
 
-	<div id="mob-c-dowload" class="c-download bg-white px-4 pt-2 lg:hidden md:hidden block">
+	<div class="c-download bg-white px-4 pt-2 lg:hidden md:hidden block">
+		<img src="https://view.adjust.com/impression/1ar4n2t?label=Web_Sticky_Download_Label&engagement_type=fallback_click&redirect_android=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Did.empatkali&redirect_ios=https%3A%2F%2Fapps.apple.com%2Fus%2Fapp%2Fempatkali%2Fid1440454442" alt="">
 		<label class="text-black block mb-1 text-xs">Belum punya aplikasi EmpatKali?</label>
 		<div class="flex justify-between items-center pb-2">
 			<div class="flex items-center">
-				<!-- <a href="https://apps.apple.com/us/app/empatkali/id1440454442" target="_blank" class="mr-2">
-					<img src="https://images.empatkali.co.id/download-istore.png" alt="" class="h-10">
-				</a>
-				<a href="https://play.google.com/store/apps/details?id=id.empatkali" target="_blank">
-					<img src="https://images.empatkali.co.id/download-play-store.png" alt="" class="h-10">
-				</a> -->
-
 				<a href="https://app.adjust.com/1ar4n2t?label=Web_Sticky_Download_Label&engagement_type=fallback_click&redirect_android=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Did.empatkali&redirect_ios=https%3A%2F%2Fapps.apple.com%2Fus%2Fapp%2Fempatkali%2Fid1440454442" target="_blank" class="mr-2">
 					<img src="https://images.empatkali.co.id/download-istore.png" alt="" class="h-10">
 				</a>
