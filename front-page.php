@@ -4,6 +4,57 @@
 
 	<!-- =================================== Slider 1 =================================== -->
 	<div class="bg-c-primary c4x-slides h-full hidden bg-cover fade">
+		<div class="w-10/12 mx-auto flex flex-col items-center justify-center">
+			<div class="w-full flex md:flex-row flex-col">
+				<div class="md:w-3/6 w-full xl:pl-3 md:text-left text-center">
+					<img src="https://empatkali.co.id/wp-content/uploads/2021/03/EmpatKali_Logo-only_white.png" alt="" class="md:w-5/12 w-2/4 md:mt-4 mb-5 md:ml-0 mx-auto">
+					<h4 class="md:text-4xl text-3xl leading-snug md:mb-2 mb-6">Indonesia's only <span class="md:lowercase md:display-inline block uppercase font-bold">free to use</span> instalment solution</h4>
+				</div>
+				<div class="md:w-3/6 w-full relative">
+					<div class="w-full md:absolute md:mt-10">
+						<img src="https://images.empatkali.co.id/rebranding/hero-home.png" alt="" class="2xl:w-4/6 xl:w-4/6 lg:w-3/4 md:w-auto w-9/12 mx-auto">
+					</div>
+				</div>
+			</div>
+
+			<div class="w-full flex flex-row items-center">
+				<div class="md:w-3/6 w-full pt-8 2xl:pb-10 md:pb-4">
+					<img src="https://empatkali.co.id/wp-content/uploads/2021/03/keuntungan-2.png" alt="" class="md:w-10/12 w-full md:mx-0 mx-auto">
+
+					<p class="text-xxxs mt-4 mb-0 text-center md:hidden">*Bebas biaya admin <span class="font-thin">khusus cicilan</span> biweekly<span class="font-thin">/ per 2 minggu<span></p>	
+				</div>
+				<div class="w-3/6 md:block hidden"></div>
+			</div>
+
+			<div class="w-full flex md:flex-row flex-col-reverse items-center md:pt-4">
+				<div class="md:w-3/6 w-4/6 flex md:flex-row flex-col items-center">
+					<div class="xl:w-5/12 md:w-7/12 w-full flex items-center">
+						<a href="https://play.google.com/store/apps/details?id=id.empatkali" target="_blank" class="md:mr-3 mr-1 flex-1">
+							<img src="https://empatkali.co.id/wp-content/uploads/2021/02/download-play-store-en.png" alt="">
+						</a>
+						<a href="https://apps.apple.com/us/app/empatkali/id1440454442" target="_blank" class="md:ml-3 ml-1 flex-1">
+							<img src="https://empatkali.co.id/wp-content/uploads/2021/02/download-app-store-en.png" alt="">
+						</a>
+					</div>
+
+					<div class="xl:w-3/6 md:w-5/12 w-full items-center">
+						<img src="https://empatkali.co.id/wp-content/uploads/2021/02/ojk.png" class="xl:w-2/5 w-3/5 md:ml-8 md:mt-0 mt-2 mx-auto" alt="">
+					</div>
+				</div>
+				<div class="md:w-3/6 w-4/6 text-center">
+					<a href="https://empatkali.co.id/2019/07/28/cicilan-tanpa-bunga-empatkali/" class="bg-c-fbe521 text-gray-800 py-2 px-6 inline-block lg:text-2xl md:text-xl text-xs font-semibold uppercase my-4 md:ml-10 md:w-auto w-full">Buy Now, Pay Later</a>
+				</div>
+			</div>
+
+			<div class="text-left w-full md:block hidden">
+				<p class="text-xs my-4">*Bebas biaya admin <span class="font-thin">khusus cicilan</span> biweekly<span class="font-thin">/ per 2 minggu<span></p>	
+			</div>
+		</div>
+	</div>
+	<!-- =================================== ./ Slider 1 =================================== -->
+
+	<!-- =================================== Slider 2 =================================== -->
+	<div class="bg-c-primary c4x-slides h-full hidden bg-cover fade">
 		<div class="lg:w-8/12 md:w-8/12 w-11/12 mx-auto flex items-center justify-end">
 			<div class="lg:w-1/2 md:w-1/2 w-full flex flex-col lg:items-end md:items-end items-center">
 				<h4 class="lg:text-4xl md:text-4xl text-3xl leading-none mb-5">Sekarang Bayar</h4>
@@ -28,10 +79,10 @@
 			</div>
 		</div>
 	</div>
-	<!-- =================================== ./ Slider 1 =================================== -->
+	<!-- =================================== ./ Slider 2 =================================== -->
 
 
-	<!-- =================================== Slider 1 =================================== -->
+	<!-- =================================== Slider 3 =================================== -->
 	<div class="bg-c-primary c4x-slides h-full hidden bg-cover fade">
 		<div class="w-10/12 mx-auto flex flex-col justify-center">
 			<div class="flex lg:mb-5 md:mb-5 mb-40 lg:flex-row md:flex-row flex-col">
@@ -81,9 +132,9 @@
 			</div>
 		</div>
 	</div>
-	<!-- =================================== ./ Slider 1 =================================== -->
+	<!-- =================================== ./ Slider 3 =================================== -->
 
-	<!-- =================================== ./ Slider 2 =================================== -->
+	<!-- =================================== ./ Slider 4 =================================== -->
 	<div class="bg-c-primary c4x-slides h-full hidden fade">
 		<div class="lg:pt-0 md:pt-0 pt-5 w-10/12 mx-auto flex lg:flex-row md:flex-row flex-col lg:text-left md:text-left text-center items-center">
 			<div class="lg:w-7/12 md:w-7/12 w-full flex flex-col justify-center lg:pl-16 md:pl-16 pl-0 lg:pr-5 md:pr-5 pr-0 lg:mb-0 md:mb-0 mb-10">
@@ -103,9 +154,10 @@
 			</div>
 		</div>
 	</div>
-	<!-- =================================== ./ Slider 2 =================================== -->
+	<!-- =================================== ./ Slider 4 =================================== -->
 
 	<div class="absolute text-right inset-x-0 bottom-0 lg:mb-3 md:mb-3 mb-0 mr-3">
+		<span class="dot"></span>
 		<span class="dot"></span>
 		<span class="dot"></span>
 		<span class="dot"></span>

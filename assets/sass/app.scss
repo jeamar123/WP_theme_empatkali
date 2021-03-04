@@ -6,7 +6,7 @@
 @import "tailwindcss/utilities";
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800&display=swap');
 
 
 @font-face{
@@ -200,8 +200,14 @@ section.hero {}
 	.c4x-slides {
 		height: 42rem;
 
-
 		&:nth-child(1) {
+			background: url(https://empatkali.co.id/wp-content/uploads/2021/03/bg-violet-radient.png) center bottom no-repeat;
+			// background-size: 100% 100%;
+			background-size: cover;
+			font-family: 'Poppins', sans-serif;
+		}
+
+		&:nth-child(2) {
 			background: url(https://empatkali.co.id/wp-content/uploads/2021/02/bg-1.png) 0 0 no-repeat;
 			// background-size: 100% 100%;
 			background-size: cover;
@@ -209,13 +215,13 @@ section.hero {}
 		}
 
 
-		&:nth-child(2) {
+		&:nth-child(3) {
 			background: url(https://empatkali.co.id/wp-content/uploads/2021/02/bg.png) 0 0 no-repeat;
 			background-size: cover;
 			font-family: 'Poppins', sans-serif;
 		}
 
-		&:nth-child(2) > div {
+		&:nth-child(3) > div {
 			&:before {
 				content: '';
 				position: absolute; bottom: -12rem; left: -7rem; z-index: 40;
@@ -419,6 +425,15 @@ footer.footer {
 		.c4x-slides {
 
 			&:nth-child(1) {
+				background: url(https://empatkali.co.id/wp-content/uploads/2021/03/bg-violet-gradient-mob.png) center bottom no-repeat;
+				background-size: cover;
+
+				img.keuntungan-1 {
+					margin-bottom: 13rem;
+				}
+			}
+			
+			&:nth-child(2) {
 				background: url(https://empatkali.co.id/wp-content/uploads/2021/02/bg-mv.png) 0 0 no-repeat;
 				background-size: cover;
 
@@ -427,12 +442,12 @@ footer.footer {
 				}
 			}
 
-			&:nth-child(2) {
+			&:nth-child(3) {
 				background-image: url(https://empatkali.co.id/wp-content/uploads/2021/02/mob-bg.png);
 				font-family: 'Poppins', sans-serif;
 			}
 
-			&:nth-child(2) > div {
+			&:nth-child(4) > div {
 				&:before, &:after {
 					display: none;
 				}
