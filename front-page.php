@@ -8,7 +8,7 @@
 			<div class="w-full flex md:flex-row flex-col">
 				<div class="md:w-3/6 w-full xl:pl-3 md:text-left text-center">
 					<img src="https://empatkali.co.id/wp-content/uploads/2021/03/EmpatKali_Logo-only_white.png" alt="" class="md:w-5/12 w-2/4 md:mt-4 mb-5 md:ml-0 mx-auto">
-					<h4 class="md:text-4xl text-3xl leading-snug md:mb-2 mb-6">Indonesia's only <span class="md:lowercase md:display-inline block uppercase font-bold">free to use</span> instalment solution</h4>
+					<h4 class="md:text-4xl text-3xl leading-snug md:mb-2 mb-6">Indonesia's only <span class="md:lowercase md:inline block uppercase font-bold">free to use</span> instalment solution</h4>
 				</div>
 				<div class="md:w-3/6 w-full relative">
 					<div class="w-full md:absolute md:mt-10">
