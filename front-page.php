@@ -12,7 +12,7 @@
 				</div>
 				<div class="md:w-3/6 w-full relative">
 					<div class="w-full md:absolute md:mt-10">
-						<img src="https://images.empatkali.co.id/rebranding/hero-home.png" alt="" class="2xl:w-4/6 xl:w-4/6 lg:w-3/4 md:w-auto w-9/12 mx-auto">
+						<img src="https://images.empatkali.co.id/rebranding/hero-home.png" alt="" class="2xl:w-4/6 xl:w-3/5 lg:w-3/4 md:w-auto w-9/12 mx-auto">
 					</div>
 				</div>
 			</div>
