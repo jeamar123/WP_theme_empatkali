@@ -12,14 +12,14 @@
 				</div>
 				<div class="md:w-3/6 w-full relative">
 					<div class="w-full md:absolute md:mt-10">
-						<img src="https://images.empatkali.co.id/rebranding/hero-home.png" alt="" class="2xl:w-3/6 xl:w-3/5 lg:w-3/4 md:w-auto w-9/12 mx-auto">
+						<img src="https://images.empatkali.co.id/rebranding/hero-home.png" alt="" class="3xl:w-5/12 2xl:w-6/12 xl:w-3/5 lg:w-3/4 md:w-auto w-9/12 mx-auto">
 					</div>
 				</div>
 			</div>
 
 			<div class="w-full flex flex-row items-center">
 				<div class="md:w-3/6 w-full pt-8 2xl:pb-10 md:pb-4">
-					<img src="https://empatkali.co.id/wp-content/uploads/2021/03/keuntungan-2.png" alt="" class="2xl:w-full md:w-10/12 w-full md:mx-0 mx-auto">
+					<img src="https://empatkali.co.id/wp-content/uploads/2021/03/keuntungan-2.png" alt="" class="2xl:w-8/12 md:w-10/12 w-full md:mx-0 mx-auto">
 
 					<p class="text-xxxs mt-4 mb-0 text-center md:hidden">*Bebas biaya admin <span class="font-thin">khusus cicilan</span> biweekly<span class="font-thin">/ per 2 minggu<span></p>	
 				</div>
