@@ -11599,6 +11599,14 @@ video {
   font-size: .35rem;
 }
 
+.text-xsm{
+  font-size: .25rem;
+}
+
+.text-5\.5xl{
+  font-size: 3.2rem;
+}
+
 .leading-3{
   line-height: .75rem;
 }
@@ -11825,6 +11833,10 @@ video {
 
 .-m-px{
   margin: -1px;
+}
+
+.-m-28{
+  margin: -9rem;
 }
 
 .my-0{
@@ -12205,6 +12217,16 @@ video {
 .-mx-px{
   margin-left: -1px;
   margin-right: -1px;
+}
+
+.-my-28{
+  margin-top: -9rem;
+  margin-bottom: -9rem;
+}
+
+.-mx-28{
+  margin-left: -9rem;
+  margin-right: -9rem;
 }
 
 .mt-0{
@@ -12815,6 +12837,22 @@ video {
   margin-left: -1px;
 }
 
+.-mt-28{
+  margin-top: -9rem;
+}
+
+.-mr-28{
+  margin-right: -9rem;
+}
+
+.-mb-28{
+  margin-bottom: -9rem;
+}
+
+.-ml-28{
+  margin-left: -9rem;
+}
+
 .hover\:m-0:hover{
   margin: 0;
 }
@@ -12965,6 +13003,10 @@ video {
 
 .hover\:-m-px:hover{
   margin: -1px;
+}
+
+.hover\:-m-28:hover{
+  margin: -9rem;
 }
 
 .hover\:my-0:hover{
@@ -13345,6 +13387,16 @@ video {
 .hover\:-mx-px:hover{
   margin-left: -1px;
   margin-right: -1px;
+}
+
+.hover\:-my-28:hover{
+  margin-top: -9rem;
+  margin-bottom: -9rem;
+}
+
+.hover\:-mx-28:hover{
+  margin-left: -9rem;
+  margin-right: -9rem;
 }
 
 .hover\:mt-0:hover{
@@ -13955,6 +14007,22 @@ video {
   margin-left: -1px;
 }
 
+.hover\:-mt-28:hover{
+  margin-top: -9rem;
+}
+
+.hover\:-mr-28:hover{
+  margin-right: -9rem;
+}
+
+.hover\:-mb-28:hover{
+  margin-bottom: -9rem;
+}
+
+.hover\:-ml-28:hover{
+  margin-left: -9rem;
+}
+
 .first\:m-0:first-child{
   margin: 0;
 }
@@ -14105,6 +14173,10 @@ video {
 
 .first\:-m-px:first-child{
   margin: -1px;
+}
+
+.first\:-m-28:first-child{
+  margin: -9rem;
 }
 
 .first\:my-0:first-child{
@@ -14485,6 +14557,16 @@ video {
 .first\:-mx-px:first-child{
   margin-left: -1px;
   margin-right: -1px;
+}
+
+.first\:-my-28:first-child{
+  margin-top: -9rem;
+  margin-bottom: -9rem;
+}
+
+.first\:-mx-28:first-child{
+  margin-left: -9rem;
+  margin-right: -9rem;
 }
 
 .first\:mt-0:first-child{
@@ -15095,6 +15177,22 @@ video {
   margin-left: -1px;
 }
 
+.first\:-mt-28:first-child{
+  margin-top: -9rem;
+}
+
+.first\:-mr-28:first-child{
+  margin-right: -9rem;
+}
+
+.first\:-mb-28:first-child{
+  margin-bottom: -9rem;
+}
+
+.first\:-ml-28:first-child{
+  margin-left: -9rem;
+}
+
 .last\:m-0:last-child{
   margin: 0;
 }
@@ -15245,6 +15343,10 @@ video {
 
 .last\:-m-px:last-child{
   margin: -1px;
+}
+
+.last\:-m-28:last-child{
+  margin: -9rem;
 }
 
 .last\:my-0:last-child{
@@ -15625,6 +15727,16 @@ video {
 .last\:-mx-px:last-child{
   margin-left: -1px;
   margin-right: -1px;
+}
+
+.last\:-my-28:last-child{
+  margin-top: -9rem;
+  margin-bottom: -9rem;
+}
+
+.last\:-mx-28:last-child{
+  margin-left: -9rem;
+  margin-right: -9rem;
 }
 
 .last\:mt-0:last-child{
@@ -16233,6 +16345,22 @@ video {
 
 .last\:-ml-px:last-child{
   margin-left: -1px;
+}
+
+.last\:-mt-28:last-child{
+  margin-top: -9rem;
+}
+
+.last\:-mr-28:last-child{
+  margin-right: -9rem;
+}
+
+.last\:-mb-28:last-child{
+  margin-bottom: -9rem;
+}
+
+.last\:-ml-28:last-child{
+  margin-left: -9rem;
 }
 
 .max-h-full{
@@ -26259,6 +26387,12 @@ header.header .menu-main-nav-container ul.menu a:hover {
   top: -13rem;
 }
 
+.c4x-slide-container .c4x-slides:nth-child(5) {
+  background: url(https://empatkali.co.id/wp-content/uploads/2021/03/Brightness_Contrast-2.png) center top no-repeat;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+}
+
 section.partners ul li:hover > div {
   display: flex;
 }
@@ -26451,6 +26585,12 @@ footer.footer .nav1 li a, footer.footer .nav2 li a {
     left: 1.25rem;
   }
 
+  .c4x-slide-container .c4x-slides:nth-child(5) {
+    background: url(https://empatkali.co.id/wp-content/uploads/2021/03/blue-mob-bg.png) center bottom no-repeat;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+  }
+
   header.header > div {
     padding-bottom: 0;
   }
@@ -26551,6 +26691,19 @@ div.page {
 
   footer.footer .modal-customer-help > div {
     overflow-y: auto;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .c4x-slides:nth-child(5) > div:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 2rem;
+    width: 45rem;
+    height: 100%;
+    background: url(https://empatkali.co.id/wp-content/uploads/2021/03/girl-image.png) bottom left no-repeat;
+    background-size: contain;
   }
 }
 
@@ -37586,6 +37739,14 @@ div.page {
     font-size: .35rem;
   }
 
+  .sm\:text-xsm{
+    font-size: .25rem;
+  }
+
+  .sm\:text-5\.5xl{
+    font-size: 3.2rem;
+  }
+
   .sm\:leading-3{
     line-height: .75rem;
   }
@@ -37812,6 +37973,10 @@ div.page {
 
   .sm\:-m-px{
     margin: -1px;
+  }
+
+  .sm\:-m-28{
+    margin: -9rem;
   }
 
   .sm\:my-0{
@@ -38192,6 +38357,16 @@ div.page {
   .sm\:-mx-px{
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .sm\:-my-28{
+    margin-top: -9rem;
+    margin-bottom: -9rem;
+  }
+
+  .sm\:-mx-28{
+    margin-left: -9rem;
+    margin-right: -9rem;
   }
 
   .sm\:mt-0{
@@ -38802,6 +38977,22 @@ div.page {
     margin-left: -1px;
   }
 
+  .sm\:-mt-28{
+    margin-top: -9rem;
+  }
+
+  .sm\:-mr-28{
+    margin-right: -9rem;
+  }
+
+  .sm\:-mb-28{
+    margin-bottom: -9rem;
+  }
+
+  .sm\:-ml-28{
+    margin-left: -9rem;
+  }
+
   .sm\:hover\:m-0:hover{
     margin: 0;
   }
@@ -38952,6 +39143,10 @@ div.page {
 
   .sm\:hover\:-m-px:hover{
     margin: -1px;
+  }
+
+  .sm\:hover\:-m-28:hover{
+    margin: -9rem;
   }
 
   .sm\:hover\:my-0:hover{
@@ -39332,6 +39527,16 @@ div.page {
   .sm\:hover\:-mx-px:hover{
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .sm\:hover\:-my-28:hover{
+    margin-top: -9rem;
+    margin-bottom: -9rem;
+  }
+
+  .sm\:hover\:-mx-28:hover{
+    margin-left: -9rem;
+    margin-right: -9rem;
   }
 
   .sm\:hover\:mt-0:hover{
@@ -39942,6 +40147,22 @@ div.page {
     margin-left: -1px;
   }
 
+  .sm\:hover\:-mt-28:hover{
+    margin-top: -9rem;
+  }
+
+  .sm\:hover\:-mr-28:hover{
+    margin-right: -9rem;
+  }
+
+  .sm\:hover\:-mb-28:hover{
+    margin-bottom: -9rem;
+  }
+
+  .sm\:hover\:-ml-28:hover{
+    margin-left: -9rem;
+  }
+
   .sm\:first\:m-0:first-child{
     margin: 0;
   }
@@ -40092,6 +40313,10 @@ div.page {
 
   .sm\:first\:-m-px:first-child{
     margin: -1px;
+  }
+
+  .sm\:first\:-m-28:first-child{
+    margin: -9rem;
   }
 
   .sm\:first\:my-0:first-child{
@@ -40472,6 +40697,16 @@ div.page {
   .sm\:first\:-mx-px:first-child{
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .sm\:first\:-my-28:first-child{
+    margin-top: -9rem;
+    margin-bottom: -9rem;
+  }
+
+  .sm\:first\:-mx-28:first-child{
+    margin-left: -9rem;
+    margin-right: -9rem;
   }
 
   .sm\:first\:mt-0:first-child{
@@ -41082,6 +41317,22 @@ div.page {
     margin-left: -1px;
   }
 
+  .sm\:first\:-mt-28:first-child{
+    margin-top: -9rem;
+  }
+
+  .sm\:first\:-mr-28:first-child{
+    margin-right: -9rem;
+  }
+
+  .sm\:first\:-mb-28:first-child{
+    margin-bottom: -9rem;
+  }
+
+  .sm\:first\:-ml-28:first-child{
+    margin-left: -9rem;
+  }
+
   .sm\:last\:m-0:last-child{
     margin: 0;
   }
@@ -41232,6 +41483,10 @@ div.page {
 
   .sm\:last\:-m-px:last-child{
     margin: -1px;
+  }
+
+  .sm\:last\:-m-28:last-child{
+    margin: -9rem;
   }
 
   .sm\:last\:my-0:last-child{
@@ -41612,6 +41867,16 @@ div.page {
   .sm\:last\:-mx-px:last-child{
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .sm\:last\:-my-28:last-child{
+    margin-top: -9rem;
+    margin-bottom: -9rem;
+  }
+
+  .sm\:last\:-mx-28:last-child{
+    margin-left: -9rem;
+    margin-right: -9rem;
   }
 
   .sm\:last\:mt-0:last-child{
@@ -42220,6 +42485,22 @@ div.page {
 
   .sm\:last\:-ml-px:last-child{
     margin-left: -1px;
+  }
+
+  .sm\:last\:-mt-28:last-child{
+    margin-top: -9rem;
+  }
+
+  .sm\:last\:-mr-28:last-child{
+    margin-right: -9rem;
+  }
+
+  .sm\:last\:-mb-28:last-child{
+    margin-bottom: -9rem;
+  }
+
+  .sm\:last\:-ml-28:last-child{
+    margin-left: -9rem;
   }
 
   .sm\:max-h-full{
@@ -61674,6 +61955,14 @@ div.page {
     font-size: .35rem;
   }
 
+  .md\:text-xsm{
+    font-size: .25rem;
+  }
+
+  .md\:text-5\.5xl{
+    font-size: 3.2rem;
+  }
+
   .md\:leading-3{
     line-height: .75rem;
   }
@@ -61900,6 +62189,10 @@ div.page {
 
   .md\:-m-px{
     margin: -1px;
+  }
+
+  .md\:-m-28{
+    margin: -9rem;
   }
 
   .md\:my-0{
@@ -62280,6 +62573,16 @@ div.page {
   .md\:-mx-px{
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .md\:-my-28{
+    margin-top: -9rem;
+    margin-bottom: -9rem;
+  }
+
+  .md\:-mx-28{
+    margin-left: -9rem;
+    margin-right: -9rem;
   }
 
   .md\:mt-0{
@@ -62890,6 +63193,22 @@ div.page {
     margin-left: -1px;
   }
 
+  .md\:-mt-28{
+    margin-top: -9rem;
+  }
+
+  .md\:-mr-28{
+    margin-right: -9rem;
+  }
+
+  .md\:-mb-28{
+    margin-bottom: -9rem;
+  }
+
+  .md\:-ml-28{
+    margin-left: -9rem;
+  }
+
   .md\:hover\:m-0:hover{
     margin: 0;
   }
@@ -63040,6 +63359,10 @@ div.page {
 
   .md\:hover\:-m-px:hover{
     margin: -1px;
+  }
+
+  .md\:hover\:-m-28:hover{
+    margin: -9rem;
   }
 
   .md\:hover\:my-0:hover{
@@ -63420,6 +63743,16 @@ div.page {
   .md\:hover\:-mx-px:hover{
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .md\:hover\:-my-28:hover{
+    margin-top: -9rem;
+    margin-bottom: -9rem;
+  }
+
+  .md\:hover\:-mx-28:hover{
+    margin-left: -9rem;
+    margin-right: -9rem;
   }
 
   .md\:hover\:mt-0:hover{
@@ -64030,6 +64363,22 @@ div.page {
     margin-left: -1px;
   }
 
+  .md\:hover\:-mt-28:hover{
+    margin-top: -9rem;
+  }
+
+  .md\:hover\:-mr-28:hover{
+    margin-right: -9rem;
+  }
+
+  .md\:hover\:-mb-28:hover{
+    margin-bottom: -9rem;
+  }
+
+  .md\:hover\:-ml-28:hover{
+    margin-left: -9rem;
+  }
+
   .md\:first\:m-0:first-child{
     margin: 0;
   }
@@ -64180,6 +64529,10 @@ div.page {
 
   .md\:first\:-m-px:first-child{
     margin: -1px;
+  }
+
+  .md\:first\:-m-28:first-child{
+    margin: -9rem;
   }
 
   .md\:first\:my-0:first-child{
@@ -64560,6 +64913,16 @@ div.page {
   .md\:first\:-mx-px:first-child{
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .md\:first\:-my-28:first-child{
+    margin-top: -9rem;
+    margin-bottom: -9rem;
+  }
+
+  .md\:first\:-mx-28:first-child{
+    margin-left: -9rem;
+    margin-right: -9rem;
   }
 
   .md\:first\:mt-0:first-child{
@@ -65170,6 +65533,22 @@ div.page {
     margin-left: -1px;
   }
 
+  .md\:first\:-mt-28:first-child{
+    margin-top: -9rem;
+  }
+
+  .md\:first\:-mr-28:first-child{
+    margin-right: -9rem;
+  }
+
+  .md\:first\:-mb-28:first-child{
+    margin-bottom: -9rem;
+  }
+
+  .md\:first\:-ml-28:first-child{
+    margin-left: -9rem;
+  }
+
   .md\:last\:m-0:last-child{
     margin: 0;
   }
@@ -65320,6 +65699,10 @@ div.page {
 
   .md\:last\:-m-px:last-child{
     margin: -1px;
+  }
+
+  .md\:last\:-m-28:last-child{
+    margin: -9rem;
   }
 
   .md\:last\:my-0:last-child{
@@ -65700,6 +66083,16 @@ div.page {
   .md\:last\:-mx-px:last-child{
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .md\:last\:-my-28:last-child{
+    margin-top: -9rem;
+    margin-bottom: -9rem;
+  }
+
+  .md\:last\:-mx-28:last-child{
+    margin-left: -9rem;
+    margin-right: -9rem;
   }
 
   .md\:last\:mt-0:last-child{
@@ -66308,6 +66701,22 @@ div.page {
 
   .md\:last\:-ml-px:last-child{
     margin-left: -1px;
+  }
+
+  .md\:last\:-mt-28:last-child{
+    margin-top: -9rem;
+  }
+
+  .md\:last\:-mr-28:last-child{
+    margin-right: -9rem;
+  }
+
+  .md\:last\:-mb-28:last-child{
+    margin-bottom: -9rem;
+  }
+
+  .md\:last\:-ml-28:last-child{
+    margin-left: -9rem;
   }
 
   .md\:max-h-full{
@@ -85762,6 +86171,14 @@ div.page {
     font-size: .35rem;
   }
 
+  .lg\:text-xsm{
+    font-size: .25rem;
+  }
+
+  .lg\:text-5\.5xl{
+    font-size: 3.2rem;
+  }
+
   .lg\:leading-3{
     line-height: .75rem;
   }
@@ -85988,6 +86405,10 @@ div.page {
 
   .lg\:-m-px{
     margin: -1px;
+  }
+
+  .lg\:-m-28{
+    margin: -9rem;
   }
 
   .lg\:my-0{
@@ -86368,6 +86789,16 @@ div.page {
   .lg\:-mx-px{
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .lg\:-my-28{
+    margin-top: -9rem;
+    margin-bottom: -9rem;
+  }
+
+  .lg\:-mx-28{
+    margin-left: -9rem;
+    margin-right: -9rem;
   }
 
   .lg\:mt-0{
@@ -86978,6 +87409,22 @@ div.page {
     margin-left: -1px;
   }
 
+  .lg\:-mt-28{
+    margin-top: -9rem;
+  }
+
+  .lg\:-mr-28{
+    margin-right: -9rem;
+  }
+
+  .lg\:-mb-28{
+    margin-bottom: -9rem;
+  }
+
+  .lg\:-ml-28{
+    margin-left: -9rem;
+  }
+
   .lg\:hover\:m-0:hover{
     margin: 0;
   }
@@ -87128,6 +87575,10 @@ div.page {
 
   .lg\:hover\:-m-px:hover{
     margin: -1px;
+  }
+
+  .lg\:hover\:-m-28:hover{
+    margin: -9rem;
   }
 
   .lg\:hover\:my-0:hover{
@@ -87508,6 +87959,16 @@ div.page {
   .lg\:hover\:-mx-px:hover{
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .lg\:hover\:-my-28:hover{
+    margin-top: -9rem;
+    margin-bottom: -9rem;
+  }
+
+  .lg\:hover\:-mx-28:hover{
+    margin-left: -9rem;
+    margin-right: -9rem;
   }
 
   .lg\:hover\:mt-0:hover{
@@ -88118,6 +88579,22 @@ div.page {
     margin-left: -1px;
   }
 
+  .lg\:hover\:-mt-28:hover{
+    margin-top: -9rem;
+  }
+
+  .lg\:hover\:-mr-28:hover{
+    margin-right: -9rem;
+  }
+
+  .lg\:hover\:-mb-28:hover{
+    margin-bottom: -9rem;
+  }
+
+  .lg\:hover\:-ml-28:hover{
+    margin-left: -9rem;
+  }
+
   .lg\:first\:m-0:first-child{
     margin: 0;
   }
@@ -88268,6 +88745,10 @@ div.page {
 
   .lg\:first\:-m-px:first-child{
     margin: -1px;
+  }
+
+  .lg\:first\:-m-28:first-child{
+    margin: -9rem;
   }
 
   .lg\:first\:my-0:first-child{
@@ -88648,6 +89129,16 @@ div.page {
   .lg\:first\:-mx-px:first-child{
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .lg\:first\:-my-28:first-child{
+    margin-top: -9rem;
+    margin-bottom: -9rem;
+  }
+
+  .lg\:first\:-mx-28:first-child{
+    margin-left: -9rem;
+    margin-right: -9rem;
   }
 
   .lg\:first\:mt-0:first-child{
@@ -89258,6 +89749,22 @@ div.page {
     margin-left: -1px;
   }
 
+  .lg\:first\:-mt-28:first-child{
+    margin-top: -9rem;
+  }
+
+  .lg\:first\:-mr-28:first-child{
+    margin-right: -9rem;
+  }
+
+  .lg\:first\:-mb-28:first-child{
+    margin-bottom: -9rem;
+  }
+
+  .lg\:first\:-ml-28:first-child{
+    margin-left: -9rem;
+  }
+
   .lg\:last\:m-0:last-child{
     margin: 0;
   }
@@ -89408,6 +89915,10 @@ div.page {
 
   .lg\:last\:-m-px:last-child{
     margin: -1px;
+  }
+
+  .lg\:last\:-m-28:last-child{
+    margin: -9rem;
   }
 
   .lg\:last\:my-0:last-child{
@@ -89788,6 +90299,16 @@ div.page {
   .lg\:last\:-mx-px:last-child{
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .lg\:last\:-my-28:last-child{
+    margin-top: -9rem;
+    margin-bottom: -9rem;
+  }
+
+  .lg\:last\:-mx-28:last-child{
+    margin-left: -9rem;
+    margin-right: -9rem;
   }
 
   .lg\:last\:mt-0:last-child{
@@ -90396,6 +90917,22 @@ div.page {
 
   .lg\:last\:-ml-px:last-child{
     margin-left: -1px;
+  }
+
+  .lg\:last\:-mt-28:last-child{
+    margin-top: -9rem;
+  }
+
+  .lg\:last\:-mr-28:last-child{
+    margin-right: -9rem;
+  }
+
+  .lg\:last\:-mb-28:last-child{
+    margin-bottom: -9rem;
+  }
+
+  .lg\:last\:-ml-28:last-child{
+    margin-left: -9rem;
   }
 
   .lg\:max-h-full{
@@ -109850,6 +110387,14 @@ div.page {
     font-size: .35rem;
   }
 
+  .xl\:text-xsm{
+    font-size: .25rem;
+  }
+
+  .xl\:text-5\.5xl{
+    font-size: 3.2rem;
+  }
+
   .xl\:leading-3{
     line-height: .75rem;
   }
@@ -110076,6 +110621,10 @@ div.page {
 
   .xl\:-m-px{
     margin: -1px;
+  }
+
+  .xl\:-m-28{
+    margin: -9rem;
   }
 
   .xl\:my-0{
@@ -110456,6 +111005,16 @@ div.page {
   .xl\:-mx-px{
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .xl\:-my-28{
+    margin-top: -9rem;
+    margin-bottom: -9rem;
+  }
+
+  .xl\:-mx-28{
+    margin-left: -9rem;
+    margin-right: -9rem;
   }
 
   .xl\:mt-0{
@@ -111066,6 +111625,22 @@ div.page {
     margin-left: -1px;
   }
 
+  .xl\:-mt-28{
+    margin-top: -9rem;
+  }
+
+  .xl\:-mr-28{
+    margin-right: -9rem;
+  }
+
+  .xl\:-mb-28{
+    margin-bottom: -9rem;
+  }
+
+  .xl\:-ml-28{
+    margin-left: -9rem;
+  }
+
   .xl\:hover\:m-0:hover{
     margin: 0;
   }
@@ -111216,6 +111791,10 @@ div.page {
 
   .xl\:hover\:-m-px:hover{
     margin: -1px;
+  }
+
+  .xl\:hover\:-m-28:hover{
+    margin: -9rem;
   }
 
   .xl\:hover\:my-0:hover{
@@ -111596,6 +112175,16 @@ div.page {
   .xl\:hover\:-mx-px:hover{
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .xl\:hover\:-my-28:hover{
+    margin-top: -9rem;
+    margin-bottom: -9rem;
+  }
+
+  .xl\:hover\:-mx-28:hover{
+    margin-left: -9rem;
+    margin-right: -9rem;
   }
 
   .xl\:hover\:mt-0:hover{
@@ -112206,6 +112795,22 @@ div.page {
     margin-left: -1px;
   }
 
+  .xl\:hover\:-mt-28:hover{
+    margin-top: -9rem;
+  }
+
+  .xl\:hover\:-mr-28:hover{
+    margin-right: -9rem;
+  }
+
+  .xl\:hover\:-mb-28:hover{
+    margin-bottom: -9rem;
+  }
+
+  .xl\:hover\:-ml-28:hover{
+    margin-left: -9rem;
+  }
+
   .xl\:first\:m-0:first-child{
     margin: 0;
   }
@@ -112356,6 +112961,10 @@ div.page {
 
   .xl\:first\:-m-px:first-child{
     margin: -1px;
+  }
+
+  .xl\:first\:-m-28:first-child{
+    margin: -9rem;
   }
 
   .xl\:first\:my-0:first-child{
@@ -112736,6 +113345,16 @@ div.page {
   .xl\:first\:-mx-px:first-child{
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .xl\:first\:-my-28:first-child{
+    margin-top: -9rem;
+    margin-bottom: -9rem;
+  }
+
+  .xl\:first\:-mx-28:first-child{
+    margin-left: -9rem;
+    margin-right: -9rem;
   }
 
   .xl\:first\:mt-0:first-child{
@@ -113346,6 +113965,22 @@ div.page {
     margin-left: -1px;
   }
 
+  .xl\:first\:-mt-28:first-child{
+    margin-top: -9rem;
+  }
+
+  .xl\:first\:-mr-28:first-child{
+    margin-right: -9rem;
+  }
+
+  .xl\:first\:-mb-28:first-child{
+    margin-bottom: -9rem;
+  }
+
+  .xl\:first\:-ml-28:first-child{
+    margin-left: -9rem;
+  }
+
   .xl\:last\:m-0:last-child{
     margin: 0;
   }
@@ -113496,6 +114131,10 @@ div.page {
 
   .xl\:last\:-m-px:last-child{
     margin: -1px;
+  }
+
+  .xl\:last\:-m-28:last-child{
+    margin: -9rem;
   }
 
   .xl\:last\:my-0:last-child{
@@ -113876,6 +114515,16 @@ div.page {
   .xl\:last\:-mx-px:last-child{
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .xl\:last\:-my-28:last-child{
+    margin-top: -9rem;
+    margin-bottom: -9rem;
+  }
+
+  .xl\:last\:-mx-28:last-child{
+    margin-left: -9rem;
+    margin-right: -9rem;
   }
 
   .xl\:last\:mt-0:last-child{
@@ -114484,6 +115133,22 @@ div.page {
 
   .xl\:last\:-ml-px:last-child{
     margin-left: -1px;
+  }
+
+  .xl\:last\:-mt-28:last-child{
+    margin-top: -9rem;
+  }
+
+  .xl\:last\:-mr-28:last-child{
+    margin-right: -9rem;
+  }
+
+  .xl\:last\:-mb-28:last-child{
+    margin-bottom: -9rem;
+  }
+
+  .xl\:last\:-ml-28:last-child{
+    margin-left: -9rem;
   }
 
   .xl\:max-h-full{
@@ -133938,6 +134603,14 @@ div.page {
     font-size: .35rem;
   }
 
+  .\32xl\:text-xsm{
+    font-size: .25rem;
+  }
+
+  .\32xl\:text-5\.5xl{
+    font-size: 3.2rem;
+  }
+
   .\32xl\:leading-3{
     line-height: .75rem;
   }
@@ -134164,6 +134837,10 @@ div.page {
 
   .\32xl\:-m-px{
     margin: -1px;
+  }
+
+  .\32xl\:-m-28{
+    margin: -9rem;
   }
 
   .\32xl\:my-0{
@@ -134544,6 +135221,16 @@ div.page {
   .\32xl\:-mx-px{
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .\32xl\:-my-28{
+    margin-top: -9rem;
+    margin-bottom: -9rem;
+  }
+
+  .\32xl\:-mx-28{
+    margin-left: -9rem;
+    margin-right: -9rem;
   }
 
   .\32xl\:mt-0{
@@ -135154,6 +135841,22 @@ div.page {
     margin-left: -1px;
   }
 
+  .\32xl\:-mt-28{
+    margin-top: -9rem;
+  }
+
+  .\32xl\:-mr-28{
+    margin-right: -9rem;
+  }
+
+  .\32xl\:-mb-28{
+    margin-bottom: -9rem;
+  }
+
+  .\32xl\:-ml-28{
+    margin-left: -9rem;
+  }
+
   .\32xl\:hover\:m-0:hover{
     margin: 0;
   }
@@ -135304,6 +136007,10 @@ div.page {
 
   .\32xl\:hover\:-m-px:hover{
     margin: -1px;
+  }
+
+  .\32xl\:hover\:-m-28:hover{
+    margin: -9rem;
   }
 
   .\32xl\:hover\:my-0:hover{
@@ -135684,6 +136391,16 @@ div.page {
   .\32xl\:hover\:-mx-px:hover{
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .\32xl\:hover\:-my-28:hover{
+    margin-top: -9rem;
+    margin-bottom: -9rem;
+  }
+
+  .\32xl\:hover\:-mx-28:hover{
+    margin-left: -9rem;
+    margin-right: -9rem;
   }
 
   .\32xl\:hover\:mt-0:hover{
@@ -136294,6 +137011,22 @@ div.page {
     margin-left: -1px;
   }
 
+  .\32xl\:hover\:-mt-28:hover{
+    margin-top: -9rem;
+  }
+
+  .\32xl\:hover\:-mr-28:hover{
+    margin-right: -9rem;
+  }
+
+  .\32xl\:hover\:-mb-28:hover{
+    margin-bottom: -9rem;
+  }
+
+  .\32xl\:hover\:-ml-28:hover{
+    margin-left: -9rem;
+  }
+
   .\32xl\:first\:m-0:first-child{
     margin: 0;
   }
@@ -136444,6 +137177,10 @@ div.page {
 
   .\32xl\:first\:-m-px:first-child{
     margin: -1px;
+  }
+
+  .\32xl\:first\:-m-28:first-child{
+    margin: -9rem;
   }
 
   .\32xl\:first\:my-0:first-child{
@@ -136824,6 +137561,16 @@ div.page {
   .\32xl\:first\:-mx-px:first-child{
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .\32xl\:first\:-my-28:first-child{
+    margin-top: -9rem;
+    margin-bottom: -9rem;
+  }
+
+  .\32xl\:first\:-mx-28:first-child{
+    margin-left: -9rem;
+    margin-right: -9rem;
   }
 
   .\32xl\:first\:mt-0:first-child{
@@ -137434,6 +138181,22 @@ div.page {
     margin-left: -1px;
   }
 
+  .\32xl\:first\:-mt-28:first-child{
+    margin-top: -9rem;
+  }
+
+  .\32xl\:first\:-mr-28:first-child{
+    margin-right: -9rem;
+  }
+
+  .\32xl\:first\:-mb-28:first-child{
+    margin-bottom: -9rem;
+  }
+
+  .\32xl\:first\:-ml-28:first-child{
+    margin-left: -9rem;
+  }
+
   .\32xl\:last\:m-0:last-child{
     margin: 0;
   }
@@ -137584,6 +138347,10 @@ div.page {
 
   .\32xl\:last\:-m-px:last-child{
     margin: -1px;
+  }
+
+  .\32xl\:last\:-m-28:last-child{
+    margin: -9rem;
   }
 
   .\32xl\:last\:my-0:last-child{
@@ -137964,6 +138731,16 @@ div.page {
   .\32xl\:last\:-mx-px:last-child{
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .\32xl\:last\:-my-28:last-child{
+    margin-top: -9rem;
+    margin-bottom: -9rem;
+  }
+
+  .\32xl\:last\:-mx-28:last-child{
+    margin-left: -9rem;
+    margin-right: -9rem;
   }
 
   .\32xl\:last\:mt-0:last-child{
@@ -138572,6 +139349,22 @@ div.page {
 
   .\32xl\:last\:-ml-px:last-child{
     margin-left: -1px;
+  }
+
+  .\32xl\:last\:-mt-28:last-child{
+    margin-top: -9rem;
+  }
+
+  .\32xl\:last\:-mr-28:last-child{
+    margin-right: -9rem;
+  }
+
+  .\32xl\:last\:-mb-28:last-child{
+    margin-bottom: -9rem;
+  }
+
+  .\32xl\:last\:-ml-28:last-child{
+    margin-left: -9rem;
   }
 
   .\32xl\:max-h-full{
@@ -158026,6 +158819,14 @@ div.page {
     font-size: .35rem;
   }
 
+  .\33xl\:text-xsm{
+    font-size: .25rem;
+  }
+
+  .\33xl\:text-5\.5xl{
+    font-size: 3.2rem;
+  }
+
   .\33xl\:leading-3{
     line-height: .75rem;
   }
@@ -158252,6 +159053,10 @@ div.page {
 
   .\33xl\:-m-px{
     margin: -1px;
+  }
+
+  .\33xl\:-m-28{
+    margin: -9rem;
   }
 
   .\33xl\:my-0{
@@ -158632,6 +159437,16 @@ div.page {
   .\33xl\:-mx-px{
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .\33xl\:-my-28{
+    margin-top: -9rem;
+    margin-bottom: -9rem;
+  }
+
+  .\33xl\:-mx-28{
+    margin-left: -9rem;
+    margin-right: -9rem;
   }
 
   .\33xl\:mt-0{
@@ -159242,6 +160057,22 @@ div.page {
     margin-left: -1px;
   }
 
+  .\33xl\:-mt-28{
+    margin-top: -9rem;
+  }
+
+  .\33xl\:-mr-28{
+    margin-right: -9rem;
+  }
+
+  .\33xl\:-mb-28{
+    margin-bottom: -9rem;
+  }
+
+  .\33xl\:-ml-28{
+    margin-left: -9rem;
+  }
+
   .\33xl\:hover\:m-0:hover{
     margin: 0;
   }
@@ -159392,6 +160223,10 @@ div.page {
 
   .\33xl\:hover\:-m-px:hover{
     margin: -1px;
+  }
+
+  .\33xl\:hover\:-m-28:hover{
+    margin: -9rem;
   }
 
   .\33xl\:hover\:my-0:hover{
@@ -159772,6 +160607,16 @@ div.page {
   .\33xl\:hover\:-mx-px:hover{
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .\33xl\:hover\:-my-28:hover{
+    margin-top: -9rem;
+    margin-bottom: -9rem;
+  }
+
+  .\33xl\:hover\:-mx-28:hover{
+    margin-left: -9rem;
+    margin-right: -9rem;
   }
 
   .\33xl\:hover\:mt-0:hover{
@@ -160382,6 +161227,22 @@ div.page {
     margin-left: -1px;
   }
 
+  .\33xl\:hover\:-mt-28:hover{
+    margin-top: -9rem;
+  }
+
+  .\33xl\:hover\:-mr-28:hover{
+    margin-right: -9rem;
+  }
+
+  .\33xl\:hover\:-mb-28:hover{
+    margin-bottom: -9rem;
+  }
+
+  .\33xl\:hover\:-ml-28:hover{
+    margin-left: -9rem;
+  }
+
   .\33xl\:first\:m-0:first-child{
     margin: 0;
   }
@@ -160532,6 +161393,10 @@ div.page {
 
   .\33xl\:first\:-m-px:first-child{
     margin: -1px;
+  }
+
+  .\33xl\:first\:-m-28:first-child{
+    margin: -9rem;
   }
 
   .\33xl\:first\:my-0:first-child{
@@ -160912,6 +161777,16 @@ div.page {
   .\33xl\:first\:-mx-px:first-child{
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .\33xl\:first\:-my-28:first-child{
+    margin-top: -9rem;
+    margin-bottom: -9rem;
+  }
+
+  .\33xl\:first\:-mx-28:first-child{
+    margin-left: -9rem;
+    margin-right: -9rem;
   }
 
   .\33xl\:first\:mt-0:first-child{
@@ -161522,6 +162397,22 @@ div.page {
     margin-left: -1px;
   }
 
+  .\33xl\:first\:-mt-28:first-child{
+    margin-top: -9rem;
+  }
+
+  .\33xl\:first\:-mr-28:first-child{
+    margin-right: -9rem;
+  }
+
+  .\33xl\:first\:-mb-28:first-child{
+    margin-bottom: -9rem;
+  }
+
+  .\33xl\:first\:-ml-28:first-child{
+    margin-left: -9rem;
+  }
+
   .\33xl\:last\:m-0:last-child{
     margin: 0;
   }
@@ -161672,6 +162563,10 @@ div.page {
 
   .\33xl\:last\:-m-px:last-child{
     margin: -1px;
+  }
+
+  .\33xl\:last\:-m-28:last-child{
+    margin: -9rem;
   }
 
   .\33xl\:last\:my-0:last-child{
@@ -162052,6 +162947,16 @@ div.page {
   .\33xl\:last\:-mx-px:last-child{
     margin-left: -1px;
     margin-right: -1px;
+  }
+
+  .\33xl\:last\:-my-28:last-child{
+    margin-top: -9rem;
+    margin-bottom: -9rem;
+  }
+
+  .\33xl\:last\:-mx-28:last-child{
+    margin-left: -9rem;
+    margin-right: -9rem;
   }
 
   .\33xl\:last\:mt-0:last-child{
@@ -162660,6 +163565,22 @@ div.page {
 
   .\33xl\:last\:-ml-px:last-child{
     margin-left: -1px;
+  }
+
+  .\33xl\:last\:-mt-28:last-child{
+    margin-top: -9rem;
+  }
+
+  .\33xl\:last\:-mr-28:last-child{
+    margin-right: -9rem;
+  }
+
+  .\33xl\:last\:-mb-28:last-child{
+    margin-bottom: -9rem;
+  }
+
+  .\33xl\:last\:-ml-28:last-child{
+    margin-left: -9rem;
   }
 
   .\33xl\:max-h-full{

@@ -214,7 +214,6 @@ section.hero {}
 			font-family: 'Poppins', sans-serif;
 		}
 
-
 		&:nth-child(3) {
 			background: url(https://empatkali.co.id/wp-content/uploads/2021/02/bg.png) 0 0 no-repeat;
 			background-size: cover;
@@ -244,6 +243,13 @@ section.hero {}
 				 top:-13rem;
 			}
 		}
+
+		&:nth-child(5) {
+			background: url(https://empatkali.co.id/wp-content/uploads/2021/03/Brightness_Contrast-2.png) center top no-repeat;
+			background-size: cover;
+			font-family: 'Poppins', sans-serif;
+		}
+		
 	}
 }
 
@@ -459,6 +465,15 @@ footer.footer {
 					 left: 1.25rem;
 				}
 			}
+
+			
+			&:nth-child(5) {
+				background: url(https://empatkali.co.id/wp-content/uploads/2021/03/blue-mob-bg.png) center bottom no-repeat;
+				background-size: cover;
+				font-family: 'Poppins', sans-serif;
+			}
+
+			
 		}
 	}
 
@@ -575,6 +590,24 @@ footer.footer {
 		    & > div {
 		    	overflow-y: auto;
 		    }
+		}
+	}
+}
+
+
+@media all and (min-width: 768px) {
+	.c4x-slides {
+		&:nth-child(5) > div {
+			&:before {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 2rem;
+				width: 45rem;
+				height: 100%;
+				background: url(https://empatkali.co.id/wp-content/uploads/2021/03/girl-image.png) bottom left no-repeat;
+				background-size: contain;
+			}
 		}
 	}
 }

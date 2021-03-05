@@ -156,7 +156,68 @@
 	</div>
 	<!-- =================================== ./ Slider 4 =================================== -->
 
+	<!-- =================================== Slider 5 =================================== -->
+	<div class="bg-c-primary c4x-slides h-full hidden bg-cover fade">
+		<div class="md:w-11/12 w-10/12 mx-auto flex flex-col justify-center">
+			<div class="w-full flex md:flex-row flex-col items-start z-50">
+				<div class="md:w-5/12 w-full">
+					<img src="https://empatkali.co.id/wp-content/uploads/2021/03/EmpatKali_Logo-only_white.png" alt="" class="md:w-48 w-32 md:mx-0 mx-auto">
+				</div>
+				<div class="md:w-7/12 w-full text-center xl:px-20 lg:px-0 px-0 md:py-0 py-4">
+					<h4 class="md:text-6xl text-3xl leading-none">Belanja <span class="uppercase font-bold">Untung</span></h4>
+					<h4 class="md:text-5.5xl text-2xl leading-tight">pakai <span class="font-bold">EmpatKali</span></h4>
+				</div>
+			</div>
+			
+			<div class="w-full flex z-50">
+				<div class="md:w-5/12 md:block hidden"></div>
+				<div class="md:w-7/12 w-full xl:px-20 lg:px-0 px-0 md:py-5 py-2 text-center relative">
+
+					<img src="https://empatkali.co.id/wp-content/uploads/2021/03/girl-image-mob.png" alt="" class="-mb-24 -mt-12 md:hidden block">
+					<span class="bg-c-fbe521 text-c-3b3969 md:text-lg text-xsm py-2 md:px-8 px-2 inline-block rounded-md md:mb-2">Belanja di <strong>semua</strong> merchant EmpatKali dapet</span>
+				</div>
+			</div>
+
+			<div class="w-full flex z-50">
+				<div class="md:w-5/12 md:block hidden"></div>
+				<div class="md:w-7/12 w-full xl:px-20 lg:px-0 px-0">
+					<img src="https://empatkali.co.id/wp-content/uploads/2021/03/voucher-2.png" class="mx-auto" alt="">
+					<div class="w-full flex items-center justify-center lg:text-base md:text-base text-sm mt-2 md:mb-6 mb-2">
+						*S&K Berlaku
+					</div>
+				</div>
+			</div>
+			
+			<div class="w-full flex md:flex-row flex-col-reverse z-50">
+				<div class="md:w-5/12 w-10/12 md:text-left md:m-0 mx-auto">
+					<div class="flex md:flex-row flex-col-reverse h-full md:items-end items-start">
+						<div class="md:w-4/12 w-8/12 md:mr-5 md:-mb-5 mx-auto">
+							<img src="https://empatkali.co.id/wp-content/uploads/2021/02/ojk.png" class="mb-3" alt="">
+						</div>
+						<div class="flex md:w-6/12 w-full lg:justify-start md:justify-start justify-center md:-mb-5">
+							<a href="https://play.google.com/store/apps/details?id=id.empatkali" target="_blank" class="md:-mr-2 w-1/2">
+								<img src="https://empatkali.co.id/wp-content/uploads/2021/02/google-play-badge.png" alt="">
+							</a>
+							<a href="https://apps.apple.com/us/app/empatkali/id1440454442" target="_blank" class="md:-ml-2 w-1/2">
+								<img src="https://empatkali.co.id/wp-content/uploads/2021/02/app-store-badge.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="md:w-7/12 w-full xl:px-20 lg:px-0 px-0">
+					<img src="https://empatkali.co.id/wp-content/uploads/2021/03/keuntungan-2.png" class="lg:mb-5 md:mb-5 mb-0 mx-auto" alt="">
+					<p class="w-full lg:text-base md:text-base text-xxs lg:py-0 md:py-0 py-2 text-center">*Bebas biaya admin <span class="font-thin">khusus cicilan</span> biweekly<span class="font-thin">/ per 2 minggu<span></p>	
+					<div class="text-center md:hidden block">
+						<a href="https://empatkali.co.id/2021/02/17/potongan-100k-merchant/" class="bg-c-fbe521 text-gray-800 py-2 px-6 inline-block lg:text-2xl md:text-xl text-xxs font-semibold uppercase md:my-4 my-1 md:ml-10">Buy Now, Pay Later</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- =================================== ./ Slider 5 =================================== -->
+
 	<div class="absolute text-right inset-x-0 bottom-0 lg:mb-3 md:mb-3 mb-0 mr-3">
+		<span class="dot"></span>
 		<span class="dot"></span>
 		<span class="dot"></span>
 		<span class="dot"></span>

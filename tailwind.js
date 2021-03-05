@@ -34,7 +34,12 @@ module.exports = {
       fontSize: {
         'xxs': '.65rem',
         'xxxs': '.35rem',
+        'xsm': '.25rem',
+        '5.5xl': '3.2rem',
       },
+      margin: {
+        '-28': '-9rem',
+      }
     },
   },
   variants: {
