@@ -7,6 +7,17 @@
 
 ?>
 
+<!-- loader -->
+<div class="empatkali-loader">
+	<div class="c-overlay-bg fixed left-0 top-0 w-full h-full flex justify-center items-center flex-col z-50">
+		<div class="relative mb-2">
+		<div class="w-48 h-48 inline-block rounded-full border-8 border-white border-opacity-25 animate-spin"></div>
+		<img src="https://empatkali.co.id/wp-content/uploads/2021/03/loader.png" class="absolute" alt="">
+		</div>
+		<span class="text-sm text-white">Sending ...</span>
+	</div>
+</div>
+
 <section class="bg-c-F3F3F3 lg:pt-20 md:pt-20 pt-32">
 	<div class="lg:w-8/12 md:w-8/12 w-10/12 mx-auto py-20">
 		<h4 class="lg:w-8/12 md:w-8/12 w-full mx-auto text-3xl font-hairline lg:leading-none md:leading-none leading-tight mb-10 pb-5 border-b border-c-primary text-center">CERITAKAN TENTANG <strong class="font-bold">BISNISMU</strong>?</h4>

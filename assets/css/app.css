@@ -26531,6 +26531,24 @@ div.page {
   }
 }
 
+.empatkali-loader {
+  display: none;
+}
+
+.c-overlay-bg {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.c-overlay-bg div div {
+  border-top-color: #fff;
+}
+
+.c-overlay-bg img {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
