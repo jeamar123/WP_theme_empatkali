@@ -138,6 +138,9 @@ function js_page_partnership() {
     	frm.addEventListener('submit', function (event) {
     		event.preventDefault();
 
+			// get loader class
+			let loader = document.querySelector('.empatkali-loader');
+
     		// Blacklisted URLs
 			let urlInput = inputs['website_url'].value
 				.replace('http://', '')
@@ -163,6 +166,7 @@ function js_page_partnership() {
 		        message: inputs['message'].value.trim(),
     		}
 
+			loader.style.display = 'block';
     		fetch('https://cms.empatkali.co.id/cms/merchant-inquiry', {
     			method: 'POST',
     			headers: {
@@ -176,6 +180,8 @@ function js_page_partnership() {
 					alert('Successfully Sent!');
 					// clear fields
 					frm.reset();
+					// hide loader
+					loader.style.display = 'none';
     			})
 
 		    // Event snippet for EmpatKali - Website Lead (Daftar Form) conversion page
