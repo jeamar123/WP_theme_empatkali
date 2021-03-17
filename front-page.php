@@ -12,7 +12,7 @@
 				</div>
 				<div class="md:w-3/6 w-full relative">
 					<div class="w-full md:absolute md:mt-10">
-						<img src="https://images.empatkali.co.id/rebranding/hero-home.png" alt="" class="3xl:w-5/12 2xl:w-6/12 xl:w-3/5 lg:w-3/4 md:w-auto w-9/12 mx-auto">
+						<img src="https://empatkali.co.id/wp-content/uploads/2021/03/biweekly.png" alt="" class="3xl:w-5/12 2xl:w-6/12 xl:w-3/5 lg:w-3/4 md:w-auto w-9/12 mx-auto">
 					</div>
 				</div>
 			</div>
