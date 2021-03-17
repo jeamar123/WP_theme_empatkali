@@ -78,26 +78,48 @@ function js_page_home_page() {
 
 		ready(function () {
 			let slideIndex = 0;
+			let slides = document.getElementsByClassName('c4x-slides'),
+					dots = document.getElementsByClassName("dot");
 			showSlides();
+			addDotListeners();
 
 			function showSlides() {
-				let slides = document.getElementsByClassName('c4x-slides'),
-					dots = document.getElementsByClassName("dot");
-
-				for (let i = 0; i < slides.length; i++ ) {
-					slides[i].style.display = 'none';
-				}
 				slideIndex++;
 				if ( slideIndex > slides.length ) {
 					slideIndex = 1;
 				}
-				for (let i = 0; i < dots.length; i++) {
-					dots[i].className = dots[i].className.replace(" active", "");
-				}
+				hideAllSliders();
+				removeDotActiveClass();
+				
 				slides[slideIndex-1].style.display = 'flex';
 				dots[slideIndex-1].className += " active";
 				setTimeout(showSlides, 5000);
 			}
+
+			function hideAllSliders()	{
+				for (let i = 0; i < slides.length; i++ ) {
+					slides[i].style.display = 'none';
+				}
+			}
+
+			function removeDotActiveClass()	{
+				for (let i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+			}
+
+			function addDotListeners(){
+				for (let i = 0; i < dots.length; i++) {
+					dots[i].addEventListener('click', function (e) {
+						slideIndex = i
+						hideAllSliders();
+						removeDotActiveClass();
+						dots[i].className += " active";
+						slides[i].style.display = 'flex';
+					})
+				}
+			}
+
 		});
     </script>
     <?php

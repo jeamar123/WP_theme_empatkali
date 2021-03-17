@@ -26,7 +26,20 @@ module.exports = {
         // commonly used on sliders, fuuuuuu
         'c-fbe521': '#fbe521',
         'c-3b3969': '#3b3969',
-    	}
+    	},
+      screens: {
+        '2xl': '1536px',
+        '3xl': '1920px',
+      },
+      fontSize: {
+        'xxs': '.65rem',
+        'xxxs': '.35rem',
+        'xsm': '.25rem',
+        '5.5xl': '3.2rem',
+      },
+      margin: {
+        '-28': '-9rem',
+      }
     },
   },
   variants: {
