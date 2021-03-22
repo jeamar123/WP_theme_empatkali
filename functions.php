@@ -27,11 +27,11 @@ function send_email_inquiry( WP_REST_Request $request ) {
 	$message .= '<b>Message:</b> '.$parameters['message'];
 	$message .= '</body></html>';
 	
-	// $to = array('jamie@empatkali.co.id', 'marketing@empatkali.co.id', 'ari.isaq@empatkali.co.id', 'devidilia@empatkali.co.id');
+	$to = array('jamie@empatkali.co.id', 'marketing@empatkali.co.id', 'ari.isaq@empatkali.co.id', 'devidilia@empatkali.co.id');
 	// $to = array('allan.alzula@gmail.com');
 	$headers = array();
 	$headers[] = 'From: hello@empatkali.co.id';
-	// $headers[] = 'Bcc: jhon@empatkali.co.id';
+	$headers[] = 'Bcc: jhon@empatkali.co.id';
 	$attachments = array();
 	add_filter('wp_mail_content_type', 'set_mail_content_type');
 	$mail = wp_mail($to, $subject, $message, $headers, $attachments);
