@@ -8,48 +8,6 @@ function empatkali_register_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'empatkali_register_styles' );
 
-function set_mail_content_type(){
-    return "text/html";
-}
-
-// rest api for email iqnuiry
-function send_email_inquiry( WP_REST_Request $request ) {
-	$parameters = $request->get_params();
-
-	$subject = 'Merchant Enquiry';
-	$message = '<!DOCTYPE html>';
-	$message .= '<html><head><meta http-equiv="Content-Type" content="text/html charset=UTF-8" /></head>';
-	$message .= '<b>Name:</b> '.$parameters['firstname'].$parameters['lastname'].'<br />';
-	$message .= '<b>Business Name:</b> '.$parameters['business_name'].'<br />';
-	$message .= '<b>Email:</b> '.$parameters['email'].'<br />';
-	$message .= '<b>Telephone:</b> '.$parameters['phone'].'<br />';
-	$message .= '<b>Website URL:</b> '.$parameters['website_url'].'<br />';
-	$message .= '<b>Message:</b> '.$parameters['message'];
-	$message .= '</body></html>';
-	
-	$to = array('jamie@empatkali.co.id', 'marketing@empatkali.co.id', 'ari.isaq@empatkali.co.id', 'devidilia@empatkali.co.id');
-	// $to = array('allan.alzula@gmail.com');
-	$headers = array();
-	$headers[] = 'From: hello@empatkali.co.id';
-	$headers[] = 'Bcc: jhon@empatkali.co.id';
-	$attachments = array();
-	add_filter('wp_mail_content_type', 'set_mail_content_type');
-	$mail = wp_mail($to, $subject, $message, $headers, $attachments);
-	remove_filter('wp_mail_content_type', 'set_mail_content_type');
-	
-	return array('status' => 200);
-}
-
-add_action( 'rest_api_init', function () {
-	register_rest_route( '/empatkali', 'send_email_inquiry', array(
-		'methods' => WP_REST_SERVER::CREATABLE,
-		'callback' => 'send_email_inquiry',
-		'args' => array(),
-		'permission_callback' => function () {
-			return true;
-		}
-	) );
-} );
 
 // Count views
 function empatkali_set_post_views($postID) {
@@ -209,23 +167,22 @@ function js_page_partnership() {
     		}
 
 			loader.style.display = 'block';
-			let url_api = window.location.origin != 'http://localhost:8888' ? window.location.origin : 'http://localhost:8888/empatkali-wordpress';
-    		fetch(url_api + '/wp-json/empatkali/send_email_inquiry', {
+    		fetch('https://cms.empatkali.co.id/cms/merchant-inquiry', {
     			method: 'POST',
     			headers: {
     				'Content-Type': 'application/json',
     			},
     			body: JSON.stringify(req)
     		})
-			.then(response => response.json())
-			.then(res => {
-				// gtag_report_conversion('https://empatkali.co.id/daftar')
-				alert('Successfully Sent!');
-				// clear fields
-				frm.reset();
-				// hide loader
-				loader.style.display = 'none';
-			})
+    			.then(response => response.json())
+    			.then(res => {
+					// gtag_report_conversion('https://empatkali.co.id/daftar')
+					alert('Successfully Sent!');
+					// clear fields
+					frm.reset();
+					// hide loader
+					loader.style.display = 'none';
+    			})
 
 		    // Event snippet for EmpatKali - Website Lead (Daftar Form) conversion page
 		    // In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button.
