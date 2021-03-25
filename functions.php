@@ -8,6 +8,47 @@ function empatkali_register_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'empatkali_register_styles' );
 
+function set_mail_content_type(){
+    return "text/html";
+}
+
+// rest api for email iqnuiry
+function send_email_inquiry( WP_REST_Request $request ) {
+	$parameters = $request->get_params();
+
+	$subject = 'Merchant Enquiry';
+	$message = '<!DOCTYPE html>';
+	$message .= '<html><head><meta http-equiv="Content-Type" content="text/html charset=UTF-8" /></head>';
+	$message .= '<b>Name:</b> '.$parameters['firstname'].$parameters['lastname'].'<br />';
+	$message .= '<b>Business Name:</b> '.$parameters['business_name'].'<br />';
+	$message .= '<b>Email:</b> '.$parameters['email'].'<br />';
+	$message .= '<b>Telephone:</b> '.$parameters['phone'].'<br />';
+	$message .= '<b>Website URL:</b> '.$parameters['website_url'].'<br />';
+	$message .= '<b>Message:</b> '.$parameters['message'];
+	$message .= '</body></html>';
+	
+	$to = array('jamie@empatkali.co.id', 'marketing@empatkali.co.id', 'ari.isaq@empatkali.co.id', 'devidilia@empatkali.co.id');
+	$headers = array();
+	$headers[] = 'From: hello@empatkali.co.id';
+	$headers[] = 'Bcc: jhon@empatkali.co.id';
+	$attachments = array();
+	add_filter('wp_mail_content_type', 'set_mail_content_type');
+	$mail = wp_mail($to, $subject, $message, $headers, $attachments);
+	remove_filter('wp_mail_content_type', 'set_mail_content_type');
+	
+	return array('status' => 200);
+}
+
+add_action( 'rest_api_init', function () {
+	register_rest_route( '/empatkali', 'send_email_inquiry', array(
+		'methods' => WP_REST_SERVER::CREATABLE,
+		'callback' => 'send_email_inquiry',
+		'args' => array(),
+		'permission_callback' => function () {
+			return true;
+		}
+	) );
+} );
 
 // Count views
 function empatkali_set_post_views($postID) {
@@ -167,7 +208,7 @@ function js_page_partnership() {
     		}
 
 			loader.style.display = 'block';
-    		fetch('https://cms.empatkali.co.id/cms/merchant-inquiry', {
+    		fetch(window.location.origin + '/wp-json/empatkali/send_email_inquiry', {
     			method: 'POST',
     			headers: {
     				'Content-Type': 'application/json',
