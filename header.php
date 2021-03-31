@@ -256,7 +256,7 @@
 			</a>
 			<div class="inline-flex items-center lg:border-l md:border-l border-0 border-gray-500 py-3 lg:pl-5 md:pl-5 pl-0 lg:ml-5 md:ml-5 ml-0 lg:mb-0 md:mb-0 mb-3">
 				<img src="https://images.empatkali.co.id/ojk-gray.png" class="w-48 -mt-2" alt="">
-				<span class="border-2 border-c-primary text-xs px-1 ml-4 mt-1 text-gray-700 font-semibold">TKB90: 95.2%</span>
+				<span class="border-2 border-c-primary text-xs px-1 ml-4 mt-1 text-gray-700 font-semibold">TKB90: 86.33%</span>
 			</div>
 		</div>
 
