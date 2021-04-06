@@ -1,10 +1,8 @@
 <?php
+// get helper function
+// require get_template_directory() . '/theme-options.php';
 
 define('THEME_VERSION', wp_get_theme()->get('Version'));
-
-// get percentage data
-global $job_percentage;
-$job_percentage = get_theme_option( 'job_percentage' );
 
 function empatkali_register_styles() {
 	wp_enqueue_style( 'fontawesome-styles', get_template_directory_uri().'/node_modules/@fortawesome/fontawesome-free/css/all.css');
@@ -560,6 +558,20 @@ function connectGopayRequest()	{
 	
 }
 
+// for tkb90
+add_action( 'init', 'get_tkb_value' );
+
+function get_tkb_value() {
+	// get percentage data
+	global $job_percentage;
+
+	$url = 'https://images.empatkali.co.id/tkb.txt';
+	$options = array( );
+	$context  = stream_context_create($options);
+	$result = file_get_contents($url, false, $context);
+	$keys = json_decode($result);
+	$job_percentage = $keys;
+}
 
 
 ?>
