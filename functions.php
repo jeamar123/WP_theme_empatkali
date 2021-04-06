@@ -2,6 +2,10 @@
 
 define('THEME_VERSION', wp_get_theme()->get('Version'));
 
+// get percentage data
+global $job_percentage;
+$job_percentage = get_theme_option( 'job_percentage' );
+
 function empatkali_register_styles() {
 	wp_enqueue_style( 'fontawesome-styles', get_template_directory_uri().'/node_modules/@fortawesome/fontawesome-free/css/all.css');
 	wp_enqueue_style( 'empatkali-styles', get_template_directory_uri().'/assets/css/app.css', [], THEME_VERSION);
