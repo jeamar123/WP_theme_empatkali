@@ -41,10 +41,51 @@ function send_email_inquiry( WP_REST_Request $request ) {
 	return array('status' => 200);
 }
 
+// rest api to get create_subscription
+function create_subscription( WP_REST_Request $request ) {
+	$parameters = $request->get_params();
+
+	$mailchimp_data = [
+		'email_address' => $parameters['email_address'],
+		'status' => 'subscribed'
+	];
+
+	$apiKey = 'ea93da03602921ba5c16e144e663c758-us7';
+	$listId = '09e6c98848';
+	
+	$memberId = md5(strtolower($mailchimp_data['email_address']));
+	$dataCenter = substr($apiKey,strpos($apiKey,'-')+1);
+	$url = 'https://' . $dataCenter . '.api.mailchimp.com/3.0/lists/' . $listId . '/members/' . $memberId;
+	$json = json_encode($mailchimp_data);
+	$ch = curl_init($url);
+
+	curl_setopt($ch, CURLOPT_USERPWD, 'user:' . $apiKey);
+	curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+	curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+	curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'PUT');
+	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+	curl_setopt($ch, CURLOPT_POSTFIELDS, $json);
+	$result = curl_exec($ch);
+	$httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+	curl_close($ch);
+
+	return array('http_code' => $httpCode, 'data' => $result);
+}
+
 add_action( 'rest_api_init', function () {
 	register_rest_route( '/empatkali', 'send_email_inquiry', array(
 		'methods' => WP_REST_SERVER::CREATABLE,
 		'callback' => 'send_email_inquiry',
+		'args' => array(),
+		'permission_callback' => function () {
+			return true;
+		}
+	) );
+
+	register_rest_route( '/subscription', 'create', array(
+		'methods' => WP_REST_SERVER::CREATABLE,
+		'callback' => 'create_subscription',
 		'args' => array(),
 		'permission_callback' => function () {
 			return true;

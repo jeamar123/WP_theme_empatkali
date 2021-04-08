@@ -217,7 +217,9 @@
 			let requestBody = {
 				email_address: this.querySelector('input[name=email]').value
 			}
-			fetch('https://cms.empatkali.co.id/cms/newsletter-subscription', {
+
+			let url = window.location.origin + '/wp-json/subscription/create';
+			fetch(url, {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json'
