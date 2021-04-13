@@ -101,7 +101,7 @@
 
 	<!-- Modal -->
 	<!-- Customer hotline -->
-	<a href="#" class="fixed bottom-0 right-0 bg-c-secondary mb-5 mr-5 lg:px-5 md:px-5 px-3 py-3 border-2 border-c-primary rounded-full flex items-center" onclick="openModal(event, 'CustomerHotline')">
+	<a href="#" class="fixed bottom-0 right-0 bg-c-secondary mb-5 mr-5 lg:px-5 md:px-5 px-3 py-3 border-2 border-c-primary rounded-full flex items-center z-50" onclick="openModal(event, 'CustomerHotline')">
 		<i class="far fa-question-circle text-2xl lg:mr-2 md:mr-2 mr-0"></i>
 		<span class="lg:inline-block md:inline-block hidden">Customer Help</span>
 	</a>

@@ -2,7 +2,79 @@
 
 <section class="pt-20 bg-c-primary text-white c4x-slide-container relative overflow-hidden">
 
-	<!-- =================================== Slider 1 =================================== -->
+	<!-- =================================== Slider =================================== -->
+	<div class="bg-c-primary c4x-slides h-full hidden bg-cover fade">
+		<div class="xl:w-10/12 lg:w-10/12 md:w-11/12 w-11/12 mx-auto flex flex-col md:items-center items-start justify-start z-10 lg:pt-0 md:pt-12">
+			<div class="w-full flex md:flex-row flex-col">
+				<div class="border-frame-img md:w-5/12 w-full">
+					<img src="https://empatkali.co.id/wp-content/uploads/2021/03/EmpatKali_Logo-only_white.png" alt="" class="lg:w-5/12 md:w-3/6 w-2/6 md:my-3 mt-5 mb-16 lg:mt-8 md:mx-0 mx-auto">
+				</div>
+				<div class="md:w-7/12 md:block hidden"></div>
+			</div>
+			<div class="w-full flex md:flex-row flex-col">
+				<div class="md:w-5/12 md:block hidden"></div>
+				<div class="md:w-7/12 w-full text-center text-black relative">
+					
+					<p class="lg:mt-12 md:mt-5 lg:text-2xl md:text-lg text-sm md:leading-none leading-tight"><b class="font-bold">Belanja</b> Sekarang!</p>
+					<p class="lg:text-5.5xl md:text-4xl text-3xl md:leading-none leading-tight font-bold">Bayar Nanti</p>
+					<p class="lg:text-4xl md:text-2xl text-2xl md:leading-none leading-tight mb-4">Setelah <b class="font-bold">Lebaran</b></p>
+					<div class="frame-border-img xl:-mt-8"></div>
+				</div>
+			</div>
+			<div class="w-full flex md:flex-row flex-col">
+				<div class="md:w-5/12 w-full md:h-auto h-32 relative" style="z-index: -2;">
+					<div class="w-full md:absolute md:mt-10 md:hidden">
+						<img src="https://www.empatkali.co.id/wp-content/uploads/2021/04/OBJECT-1.png" alt="" class="w-full mx-auto">
+					</div>
+				</div>
+				<div class="disc-div md:w-7/12 w-full z-50 relative">
+					<img src="https://www.empatkali.co.id/wp-content/uploads/2021/04/DISC.png" alt="" class="w-10/12 z-50 lg:mt-12 mt-8 mb-4 mx-auto">
+				</div>
+			</div>
+
+			<div class="w-full flex md:flex-row-reverse flex-col">
+				<div class="disc-div md:w-7/12 w-10/12 mx-auto flex flex-col">
+					<div class="md:w-10/12 mx-auto w-full">
+						<img src="https://www.empatkali.co.id/wp-content/uploads/2021/04/CORE-PROP.png" alt="" class="w-full mx-auto">
+					</div>
+					<div class="md:w-10/12 mx-auto w-full flex md:text-xxs text-mob-xxs text-black py-4">
+						<div class="w-2/3">
+							<p><b class="font-semibold">*Syarat & Ketentuan Berlaku</b></p>
+							<p>info promo lebih lanjut, lihat di aplikasi empatkali.</p>
+						</div>
+						<div class="w-1/3 text-right">
+							<p><b>Periode promo:</b></p>
+							<p>15 April - 15 Mei 2021</p>
+						</div>
+					</div>
+				</div>
+				<div class="md:w-5/12 w-10/12 mx-auto flex items-center md:flex-col flex-row">
+					<div class="md:w-11/12 md:mx-auto w-9/12">
+						<div class="w-full rounded-md bg-c-b0fce2 flex items-center px-1 py-2 text-black">
+							<div class="lg:w-2/12 w-3/12 text-right lg:text-sm text-xsm">
+								<p class="leading-none">REDEEM<br>VOUCHER<br>CODE</p>
+							</div>
+							<div class="lg:w-10/12 w-9/12">
+								<p class="lg:text-5xl text-2xl px-1 md:text-center"><b>RAMADAN4X</b></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="md:w-full w-3/12 text-center pl-1 md:mt-4">
+						<a href="https://apps.apple.com/us/app/empatkali/id1440454442" target="_blank" class="lg:w-32 md:w-24 w-full md:mb-0 mb-1 md:inline-block block">
+							<img src="https://empatkali.co.id/wp-content/uploads/2021/02/download-app-store-en.png" alt="">
+						</a>
+						<a href="https://play.google.com/store/apps/details?id=id.empatkali" target="_blank" class="lg:w-32 md:w-24 w-full md:inline-block block">
+							<img src="https://empatkali.co.id/wp-content/uploads/2021/02/download-play-store-en.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- =================================== ./ Slider =================================== -->
+
+	<!-- =================================== Slider =================================== -->
 	<div class="bg-c-primary c4x-slides h-full hidden bg-cover fade">
 		<div class="w-10/12 mx-auto flex flex-col items-center justify-center">
 			<div class="w-full flex md:flex-row flex-col">
@@ -51,9 +123,9 @@
 			</div>
 		</div>
 	</div>
-	<!-- =================================== ./ Slider 1 =================================== -->
+	<!-- =================================== ./ Slider =================================== -->
 
-	<!-- =================================== Slider 2 =================================== -->
+	<!-- =================================== Slider =================================== -->
 	<div class="bg-c-primary c4x-slides h-full hidden bg-cover fade">
 		<div class="lg:w-8/12 md:w-8/12 w-11/12 mx-auto flex items-center justify-end">
 			<div class="lg:w-1/2 md:w-1/2 w-full flex flex-col lg:items-end md:items-end items-center">
@@ -79,9 +151,10 @@
 			</div>
 		</div>
 	</div>
-	<!-- =================================== ./ Slider 2 =================================== -->
+	<!-- =================================== ./ Slider =================================== -->
 
-	<div class="absolute text-right inset-x-0 bottom-0 lg:mb-3 md:mb-3 mb-0 mr-3">
+	<div class="absolute text-right inset-x-0 bottom-0 lg:mb-3 md:mb-3 mb-0 mr-3 z-50">
+		<span class="dot"></span>
 		<span class="dot"></span>
 		<span class="dot"></span>
 	</div>

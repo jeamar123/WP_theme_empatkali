@@ -201,21 +201,60 @@ section.hero {}
 		height: 42rem;
 
 		&:nth-child(1) {
+			background: url(https://www.empatkali.co.id/wp-content/uploads/2021/04/background-gray.png) center bottom no-repeat;
+			// background-size: 100% 100%;
+			background-size: cover;
+			font-family: 'Poppins', sans-serif;
+			position: relative;
+				
+
+			.frame-border-img{
+				background: url(https://www.empatkali.co.id/wp-content/uploads/2021/04/FRAME-e1618303634943.png) center top no-repeat;
+				background-size: 100% auto;
+				content: "";
+				position: absolute;
+				top: -55px;
+				left: 0;
+				width: 100%;
+				height: 100vh;
+				z-index: -1;
+
+				&::before{
+					background: url(https://www.empatkali.co.id/wp-content/uploads/2021/04/FOREGROUND-BOLA-1.png) center top no-repeat;
+					background-size: contain;
+					content: "";
+					position: absolute;
+					top: 30%;
+					left: -6px;
+					width: 55px;
+					height: 55px;
+					z-index: 1;
+				}
+
+				&::after{
+					background: url(https://www.empatkali.co.id/wp-content/uploads/2021/04/FOREGROUND-BOLA-2.png) center top no-repeat;
+					background-size: contain;
+					content: "";
+					position: absolute;
+					top: 20%;
+					right: 0px;
+					width: 70px;
+					height: 70px;
+					z-index: 1;
+				}
+			}
+		}
+		
+		&:nth-child(2) {
 			background: url(https://empatkali.co.id/wp-content/uploads/2021/03/bg-violet-radient.png) center bottom no-repeat;
 			// background-size: 100% 100%;
 			background-size: cover;
 			font-family: 'Poppins', sans-serif;
 		}
 
-		&:nth-child(2) {
+		&:nth-child(3) {
 			background: url(https://empatkali.co.id/wp-content/uploads/2021/02/bg-1.png) 0 0 no-repeat;
 			// background-size: 100% 100%;
-			background-size: cover;
-			font-family: 'Poppins', sans-serif;
-		}
-
-		&:nth-child(3) {
-			background: url(https://empatkali.co.id/wp-content/uploads/2021/03/Brightness_Contrast-2.png) center top no-repeat;
 			background-size: cover;
 			font-family: 'Poppins', sans-serif;
 		}
@@ -400,7 +439,7 @@ footer.footer {
 
 		.c4x-slides {
 
-			&:nth-child(1) {
+			&:nth-child(2) {
 				background: url(https://empatkali.co.id/wp-content/uploads/2021/03/bg-violet-gradient-mob.png) center bottom no-repeat;
 				background-size: cover;
 
@@ -409,7 +448,7 @@ footer.footer {
 				}
 			}
 			
-			&:nth-child(2) {
+			&:nth-child(3) {
 				background: url(https://empatkali.co.id/wp-content/uploads/2021/02/bg-mv.png) 0 0 no-repeat;
 				background-size: cover;
 
@@ -417,12 +456,6 @@ footer.footer {
 					margin-bottom: 13rem;
 				}
 			}
-
-			&:nth-child(3) {
-				background: url(https://empatkali.co.id/wp-content/uploads/2021/03/blue-mob-bg.png) center bottom no-repeat;
-				background-size: cover;
-				font-family: 'Poppins', sans-serif;
-			}			
 		}
 	}
 
@@ -543,23 +576,91 @@ footer.footer {
 	}
 }
 
-
-@media all and (min-width: 768px) {
-	.c4x-slides {
-		&:nth-child(3) > div {
-			&:before {
-				content: "";
-				position: absolute;
-				bottom: 0;
-				left: 2rem;
-				width: 45rem;
-				height: 100%;
-				background: url(https://empatkali.co.id/wp-content/uploads/2021/03/girl-image.png) bottom left no-repeat;
-				background-size: contain;
+@media all and (min-width: 768px) and (max-width: 1024px) {
+	.c4x-slide-container {
+		.c4x-slides {
+			&:nth-child(1) > div {
+				&:before {
+					content: "";
+					position: absolute;
+					top: 0;
+					left: -10vw;
+					width: 100%;
+					height: 100%;
+					background: url(https://www.empatkali.co.id/wp-content/uploads/2021/04/OBJECT-1-web.png) top left no-repeat;
+					background-size: auto 100%;
+					z-index: -5;
+				}
 			}
 		}
 	}
 }
+
+@media all and (min-width: 768px) {
+	.c4x-slide-container {
+		.c4x-slides {
+			&:nth-child(1) {
+				.frame-border-img{
+					&::before{
+						top: 41%;
+						width: 65px;
+						height: 65px;
+					}
+
+					&::after{
+						top: 18%;
+						right: -20px;
+						width: 80px;
+						height: 80px;
+					}
+				}
+			}
+			
+			.disc-div{
+				z-index: -2;
+			}
+			
+		}
+	}
+}
+
+@media all and (min-width: 1024px) {
+	.c4x-slide-container {
+		.c4x-slides {
+			&:nth-child(1) {
+				.frame-border-img{
+					&::before{
+						top: 56%;
+						width: 95px;
+						height: 95px;
+					}
+
+					&::after{
+						top: 30%;
+						right: -21px;
+						width: 120px;
+						height: 120px;
+					}
+				}
+			}
+
+			&:nth-child(1) > div {
+				&:before {
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 50rem;
+					height: 100%;
+					background: url(https://www.empatkali.co.id/wp-content/uploads/2021/04/OBJECT-1-web.png) top left no-repeat;
+					background-size: cover;
+					z-index: -5;
+				}
+			}
+		}
+	}
+}
+
 
 
 // ====================================================================
