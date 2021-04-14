@@ -3,7 +3,7 @@
 <section class="pt-20 bg-c-primary text-white c4x-slide-container relative overflow-hidden">
 
 	<!-- =================================== Slider =================================== -->
-	<div class="bg-c-primary c4x-slides h-full hidden bg-cover fade">
+	<div class="bg-c-primary c4x-slides h-full hidden bg-cover fade" onclick="window.open('https://www.empatkali.co.id/2021/04/14/ramadan-empatkali/')">
 		<div class="xl:w-10/12 lg:w-10/12 md:w-11/12 w-11/12 mx-auto flex flex-col md:items-center items-start justify-start z-10 lg:pt-0 md:pt-12">
 			<div class="w-full flex md:flex-row flex-col">
 				<div class="border-frame-img md:w-5/12 w-full">
