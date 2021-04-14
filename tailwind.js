@@ -2,7 +2,11 @@
 //             2. #98A2AB / rgb(152, 162, 171) (Dark Grayish Blue / Gray Chateau)
 
 module.exports = {
-  purge: [],
+  // purge: [],
+  purge: {
+    enabled: true,
+    content: ['./*.php']
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     borderWidth: {
