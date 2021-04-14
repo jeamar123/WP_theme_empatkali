@@ -2,7 +2,11 @@
 //             2. #98A2AB / rgb(152, 162, 171) (Dark Grayish Blue / Gray Chateau)
 
 module.exports = {
-  purge: [],
+  // purge: [],
+  purge: {
+    enabled: true,
+    content: ['./*.php']
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     borderWidth: {
@@ -22,6 +26,7 @@ module.exports = {
         'c-98A2AB': '#98A2AB',
         'c-4D539C': '#4D539C',
         'c-6166A8': '#6166A8',
+        'c-b0fce2': '#b0fce2',
 
         // commonly used on sliders, fuuuuuu
         'c-fbe521': '#fbe521',
@@ -32,6 +37,7 @@ module.exports = {
         '3xl': '1920px',
       },
       fontSize: {
+        'mob-xxs': '7px',
         'xxs': '.65rem',
         'xxxs': '.35rem',
         'xsm': '.25rem',
