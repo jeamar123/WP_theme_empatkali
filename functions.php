@@ -299,9 +299,10 @@ function js_page_contact_us() {
 		}
 
 		ready(function () {
+				var addressCoordinates = [-6.240595935401822, 106.80447767463964];
 
 		    var theMap = new L.Map('the-map',{
-		            center: [-6.248757, 106.781731],
+		            center: addressCoordinates,
 		            zoom: 17,
 		            zoomControl: false,
 		            attributionControl: false
@@ -324,7 +325,7 @@ function js_page_contact_us() {
 			  html: '<i class="fa fa-map-marker-alt text-4xl"></i>',
 			  iconSize: [20, 20],
 			});
-		    var theMarker = L.marker([-6.248757, 106.781731], {
+		    var theMarker = L.marker(addressCoordinates, {
 		            icon: icon
 		        })
 
