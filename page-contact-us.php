@@ -6,7 +6,7 @@
 		
 		<address class="not-italic">
 			<strong class="block text-lg">PT. EMPAT KALI INDONESIA</strong>
-			<span class="block text-sm">Jl. Bungur II Ruko No. 6A/B, RT/RW 6/2, Kebayoran Lama Selatan, Jakarta Selatan, Indonesia 12240</span>
+			<span class="block text-sm"><b>Recapital Building</b>, Jl. Aditiyawarman No.55, RT.3 / RW.2, Melawai, Kec. Kby. Baru, City of South Jakarta, Special Capital Region of Jakarta 12160</span>
 			<ul class="my-6 flex lg:flex-row md:flex-row flex-col">
 				<li class="lg:w-1/4 md:w-1/4 w-full lg:mb-0 md:mb-0 mb-5">
 					<label class="text-sm text-c-98A2AB">Hari Operasional</label>
