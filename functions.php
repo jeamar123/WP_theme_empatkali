@@ -606,8 +606,8 @@ add_action( 'init', 'get_tkb_value' );
 function get_tkb_value() {
 	// get percentage data
 	global $job_percentage;
-
-	$url = 'https://images.empatkali.co.id/tkb.txt';
+	
+	$url = 'https://images.empatkali.co.id/tkb.txt?v='.time();
 	$options = array( );
 	$context  = stream_context_create($options);
 	$result = file_get_contents($url, false, $context);
