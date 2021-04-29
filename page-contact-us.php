@@ -18,7 +18,7 @@
 				</li>
 				<li class="lg:w-1/4 md:w-1/4 w-full lg:mb-0 md:mb-0 mb-5">
 					<label class="text-sm text-c-98A2AB">Telepon/Whatsapp</label>
-					<span class="block font-bold"><a href="tel:+622150861545">+62 21 5086 1545</a></span>
+					<span class="block"><a href="tel:+62150860688">+622150860688</a> / <a href="tel:+622150861545">+622150861545</a></span>
 				</li>
 				<li class="lg:w-1/4 md:w-1/4 w-full lg:mb-0 md:mb-0">
 					<label class="text-sm text-c-98A2AB">E-mail</label>
