@@ -135,6 +135,36 @@
 			</form>
 		</div>
 	</div>
+
+
+
+	<div class="announcement-modal fixed top-0 left-0 flex justify-center w-full h-full" style="z-index: 9999">
+		<div class="w-full max-h-screen overflow-auto">
+			<div class="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-0"></div>
+			<div class="border border-c-primary bg-white rounded-lg xl:w-10/12 lg:w-10/12 sm:w-10/12 w-11/12 p-10 relative mx-auto lg:mt-16 mt-5">
+				<a href="#" class="close text-black text-3xl absolute right-0 top-0 pr-5 mt-1">&times;</a>
+			
+				<p class="text-gray-700 font-normal mb-4">Dear Sahabat EmpatKali,</p>
+
+				<p class="text-gray-700 font-normal mb-4">Dengan berat hati kami sampaikan bahwa PT. Empat Kali Indonesia tidak lagi mendapatkan perizinan penuh untuk beroperasi di Indonesia terhitung pada tanggal 8 Mei 2021.</p>
+
+				<p class="text-gray-700 font-normal mb-4">Kami memahami bahwa ini adalah berita mengecewakan bagi para pelanggan setia EmpatKali. Untuk itu kami sangat menghargai setiap dukungan dari sahabat Empatkali.</p>
+
+				<p class="text-gray-700 font-normal mb-4">Kami akan tetap berkomitmen terhadap upaya investasi kami di Asia, khususnya Indonesia sebagai bagian dari rencana jangka panjang kami.</p>
+
+				<p class="text-gray-700 font-normal mb-4">Kami akan terus bekerja sama dengan Otoritas Jasa Keuangan Indonesia untuk memahami peluang masa depan kami di kawasan ini.</p>
+
+				<p class="text-gray-700 font-normal mb-4">Penting diingat bagi para pelanggan yang masih memiliki cicilan transaksi yang belum selesai masih harus berkewajiban secara hukum untuk menyelesaikan pembayaran atas pinjaman tersebut secara tepat waktu, termasuk biaya keterlambatan pembayaran.</p>
+
+				<p class="text-gray-700 font-normal mb-4">Dan pihak EmpatKali masih memiliki hak untuk menghubungi para pelanggan untuk memproses segala transaksi yang belum selesai.</p>
+
+				<p class="text-gray-700 font-normal mb-4">Terima kasih atas kepercayaan sahabat EmpatKali yang selama ini terjalin baik bersama PT. Empat Kali Indonesia.</p>
+
+			
+			</div>
+		</div>
+	</div>
+	
 </footer>
 
 
@@ -244,6 +274,13 @@
 			e.preventDefault();
 			document.querySelector('.c-download').style.display = 'none';
 		});
+
+
+		// x button
+		document.querySelector('.announcement-modal a.close').addEventListener('click', function (e) {
+			e.preventDefault();
+			document.querySelector('.announcement-modal').style.display = 'none';
+		})
 
 		// if(document.documentElement.clientWidth < 768){
 		// 	console.log(document.documentElement.clientWidth);
